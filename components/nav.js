@@ -1,22 +1,29 @@
 import Instagram from '../svgs/instagram.svg';
 import Behance from '../svgs/behance.svg';
 import { withRouter } from 'next/router'
+import Link from 'next/link'
 
 const Nav = ({ router }) => (
     <div className="header">
         <div className="header-line">
             <div className="nav-section">
-                JH
+                <Link href="/">
+                    JH
+                </Link>
             </div>
             <div className="nav-section">
-                <a href="/" className={router.pathname === '/' && 'selected'}>Work</a>
-                <a href="/about" className={router.pathname === '/about' && 'selected'}>About</a>
+                <div className={router.pathname === '/' && 'selected'}>
+                    <Link href="/">Work</Link>
+                </div>
+                <div className={router.pathname === '/about' && 'selected'}>
+                    <Link href="/about">About</Link>
+                </div>
                 {/* <a href="" className="nav-item">Resume</a> */}
             </div>
         </div>
         <div className="header-line">
             <div className="nav-subsection">
-                <a>hoxie.julie@gmail.com</a>
+                <a href="mailto:hoxie.julie@gmail.com">hoxie.julie@gmail.com</a>
                 <div>product designer</div>
                 <div>SF, CA</div>
             </div>
@@ -45,12 +52,6 @@ const Nav = ({ router }) => (
             flex-direction: row;
             display: flex;
         }
-        .nav-section > a {
-            margin-left: 60px;
-        }
-        .nav-section > a.selected {
-            border-bottom: 3px solid #3E22ED;
-        }
         .nav-subsection {
             margin-top: 20px;
             font-size: 18px;
@@ -66,6 +67,14 @@ const Nav = ({ router }) => (
             width: 16px;
             diplay: inline-block;
             margin: 16px;
+        }
+    `}</style>
+    <style jsx global>{`
+        .nav-section > div > a {
+            margin-left: 60px;
+        }
+        .nav-section > .selected > a {
+            border-bottom: 3px solid #3E22ED;
         }
     `}</style>
     </div>

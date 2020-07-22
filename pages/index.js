@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const caseStudies = [
   {
-    studyHref: 'tansaki',
+    studyHref: 'healthkeep',
     title: 'Health screening app',
     subtitle: 'How user research helped guide a major pivot',
     image: (<img className="portfolio-piece-img" src="/healthkeep-header.png" style={{width: 335,
@@ -21,7 +21,7 @@ const caseStudies = [
       marginRight: 70}}></img>),
   },
   {
-    studyHref: 'tansaki',
+    studyHref: 'healthscheduling',
     title: 'Healthcare appointment scheduling',
     subtitle: 'A client hired me to create a better landing page CTA',
     image: (<img className="portfolio-piece-img" src="/apptapp-header.png" style={{width: 335,
@@ -48,7 +48,7 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
     <div className="portfolio-piece">
       <div className="info">
         <div className="section-header">{title}</div>
-        <div className="section-subheader">{subtitle}</div>
+        <div>{subtitle}</div>
       </div>
       {image}
       <style jsx>{`
