@@ -57,6 +57,12 @@ function MyApp({ Component, pageProps }) {
                 align-items: center;
                 color: #2A16A4;
             }
+            @media only screen and (max-width: 767px) {
+                main {
+                  margin: 0;
+                }
+              }
+            }
 
             .content {
                 font-weight: normal;
@@ -103,6 +109,11 @@ function MyApp({ Component, pageProps }) {
                 .grid {
                     width: 100%;
                     flex-direction: column;
+                }
+
+                .section-header {
+                    font-size: 30px;
+                    line-height: 35px;
                 }
             }
 
@@ -234,6 +245,35 @@ function MyApp({ Component, pageProps }) {
                 border-radius: 6px;
                 padding: 40px;
                 display: inline-block;
+            }
+            @media only screen and (max-width: 767px) {
+                .casestudy-header {
+                    padding: 0 24px 24px 24px;
+                }
+                .casestudy-panel {
+                    padding: 0 24px 24px 24px;
+                }
+                .portfolio-pieces {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                .full-width-mobile {
+                    grid-template-columns: 1fr;
+                }
+                .casestudy-container {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .meta {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                .final-img-container {
+                    padding: 8px;
+                }
+              }
             }
         `}</style>
     </div>

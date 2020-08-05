@@ -2,22 +2,19 @@ const Healthkeep = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="grid two-thirds-one-third extra-top-padding">
+            <div className="grid two-thirds-one-third full-width-mobile extra-top-padding">
                 <div className="grid-tile" style={{margin: 'auto 0'}}>
                     <div className="section-header">Health screening app</div>
                     <div className="">How user research helped guide a major pivot</div>
                 </div>
                 <div className="grid-tile">
-                    <img className="portfolio-piece-img" src="/healthkeep-header.png" style={{width: 335,
-                        height: 249,
-                        marginTop: 0,
-                        marginRight: 80}}/>
+                    <img className="portfolio-piece-img" src="/healthkeep-header.png" />
                 </div>
             </div>
         </div>
          {/* Meta */}
          <div className="casestudy-panel">
-            <div className="grid half-and-half">
+            <div className="grid half-and-half full-width-mobile ">
                 <div className="gray sub-panel meta" style={{ alignSelf: 'start' }}>
                     <div>
                         <span className="medium">Date:</span><span className="thin"> August 2019</span>
@@ -93,15 +90,15 @@ const Healthkeep = () => (
             <div>
                 User testing showed that one easily accessible place to store all healthcare data would bring greater clarity and autonomy over someone’s health status and how to manage their care going forward. The app is a space that offers understanding and self-advocacy.
             </div>
-            <div className="extra-top-padding">
-                <div className="gray" style={{margin:'auto', width: '400px', padding: 10, borderRadius: 6, display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-                        <img style={{margin: 10}} width="166" src="/healthkeep-sketches1.png"/>
-                        <img style={{margin: 10}} width="166" src="/healthkeep-sketches2.png"/>
+            <div className="extra-top-padding img-grid-container">
+                <div className="gray img-grid-subcontainer">
+                    <div>
+                        <img src="/healthkeep-sketches1.png"/>
+                        <img src="/healthkeep-sketches2.png"/>
                     </div>
-                    <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-                        <img style={{margin: 10}} width="166" src="/healthkeep-sketches3.png"/>
-                        <img style={{margin: 10}} width="166" src="/healthkeep-flow.png"/>
+                    <div>
+                        <img src="/healthkeep-sketches3.png"/>
+                        <img src="/healthkeep-flow.png"/>
                     </div>
                     <div style={{textAlgin: 'center', margin: 'auto'}}>
                         <i style={{fontSize: 16, lineHeight: '19px'}}>Sketches; user flow</i>
@@ -113,14 +110,14 @@ const Healthkeep = () => (
             <div className="section-subheader">
                 Minimalist UI to create a sense of calm
             </div>
-            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
+            <div className="sense-of-calm">
                 <div>
-                    <img style={{margin: 10}} width="357" src="/healthkeep-font.png"/>
-                    <img style={{margin: 10}} width="357" src="/healthkeep-icons.png"/>
+                    <img width="357" src="/healthkeep-font.png"/>
+                    <img width="357" src="/healthkeep-icons.png"/>
                 </div>
                 <div>
-                    <img style={{margin: 10}} width="357" src="/healthkeep-buttons.png"/>
-                    <img style={{margin: 10}} width="357" src="/healthkeep-color.png"/>
+                    <img width="357" src="/healthkeep-buttons.png"/>
+                    <img width="357" src="/healthkeep-color.png"/>
                 </div>
             </div>
         </div>
@@ -132,16 +129,16 @@ const Healthkeep = () => (
                 Intially I kept people’s results secure and private by making a card that pulls down to reveal the result. However, during my next round of user testing I found that the card pulling down was actually confusing instead of delightful.
             </div>
             <div className="extra-top-padding">
-                <div className="gray" style={{margin:'auto', width: '692px', padding: 10, borderRadius: 6, display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                <div className="gray drawing-board">
                     <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-                        <div style={{margin: 20}}>
-                            <img width="294" src="/healthkeep-early1.png"/>
+                        <div className="drawing-board-img-container">
+                            <img src="/healthkeep-early1.png"/>
                             <div style={{textAlign: 'center', marginTop: 10}}>
                                 <i style={{fontSize: 16, lineHeight: '19px'}}>Main screen</i>
                             </div>
                         </div>
-                        <div style={{margin: 20}}>
-                            <img width="294" src="/healthkeep-early2.png"/>
+                        <div className="drawing-board-img-container">
+                            <img  src="/healthkeep-early2.png"/>
                             <div style={{textAlign: 'center', marginTop: 10}}>
                                 <i style={{fontSize: 16, lineHeight: '19px'}}>Card reveal</i>
                             </div>
@@ -163,7 +160,7 @@ const Healthkeep = () => (
             </div>
             <div className="extra-top-padding">
                 <div className="final-img-container">
-                    <img width="561" src="/healthkeep-final1.png"/>
+                    <img className="final-img-1" src="/healthkeep-final1.png"/>
                 </div>
             </div>
         </div>
@@ -173,7 +170,7 @@ const Healthkeep = () => (
             </div>
             <div>
                 <div className="final-img-container">
-                    <img width="948" src="/healthkeep-final2.png"/>
+                    <img className="final-img-2" src="/healthkeep-final2.png"/>
                 </div>
             </div>
         </div>
@@ -183,7 +180,7 @@ const Healthkeep = () => (
             </div>
             <div>
                 <div className="final-img-container">
-                    <img width="661" src="/healthkeep-final3.png"/>
+                    <img className="final-img-3" src="/healthkeep-final3.png"/>
                 </div>
             </div>
         </div>
@@ -197,6 +194,108 @@ const Healthkeep = () => (
                 I made the app based on my experiencing in OBGYN and I would be curious to learn more about other healthcare specialities to see how the other screenings might fit into this app and how I might need to change the app to make it more adaptable to other specialities.
             </div>
         </div>
+        <style jsx>{`
+            .portfolio-piece-img {
+                width: 335px;
+                height: 249px;
+                margin-top: 0;
+                margin-right: 80px;
+            }
+            .sense-of-calm {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .sense-of-calm img {
+                margin: 10px;
+            }
+            .drawing-board {
+                margin: auto;
+                width: 692px;
+                padding: 10px;
+                borderRadius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .drawing-board img {
+                width: 294px;
+            }
+            .drawing-board-img-container {
+                margin: 20px;
+            }
+            .final-img-1 {
+                width: 561px;
+            }
+            .final-img-2 {
+                width: 948px;
+            }
+            .final-img-3 {
+                width: 661px;
+            }
+            .img-grid-container img {
+                margin: 10px;
+            }
+            .img-grid-subcontainer {
+                margin: auto;
+                width: 400px;
+                padding: 10px;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .img-grid-subcontainer > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .img-grid-subcontainer img {
+                width: 166px;
+            }
+            @media only screen and (max-width: 767px) {
+                .img-grid-subcontainer {
+                    width: 327px;
+                }
+                .img-grid-subcontainer img {
+                    width: 148px;
+                }
+                .portfolio-piece-img {
+                    margin-top: 33px;
+                    margin-right: 0;
+                }
+                .sense-of-calm {
+                    flex-direction: column;
+                }
+                .sense-of-calm > div {
+                    flex-direction: column;
+                    display: flex;
+                }
+                .img-grid-container img {
+                    margin: 4px;
+                }
+                .drawing-board {
+                    width: 327px;
+                }
+                .drawing-board img {
+                    width: 130px;
+                }
+                .drawing-board-img-container {
+                    margin: 10px;
+                }
+                .final-img-1 {
+                    width: 328px;
+                }
+                .final-img-2 {
+                    width: 327px;
+                }
+                .final-img-3 {
+                    width: 327px;
+                }
+            }
+        `}</style>
     </div>
 );
 

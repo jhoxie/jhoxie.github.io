@@ -38,6 +38,11 @@ const Nav = ({ router }) => (
             width: 100%;
             padding: 80px;
         }
+        @media only screen and (max-width: 767px) {
+            .header {
+                padding: 24px;
+            }
+        }
         .header-line {
             display: flex;
             flex-direction: row;
