@@ -2,20 +2,19 @@ const HealthScheduling = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="grid two-thirds-one-third extra-top-padding">
+            <div className="grid two-thirds-one-third full-width-mobile extra-top-padding">
                 <div className="grid-tile" style={{ marginLeft: 0 }}>
                     <div className="section-header">Healthcare scheduling app</div>
                     <div>Improve appointment scheduling at a specialized heath clinic</div>
                 </div>
                 <div className="grid-tile">
-                    <img className="portfolio-piece-img" src="/apptapp-header.png" style={{width: 381,
-                    height: 283}}/>
+                    <img className="portfolio-piece-img" src="/apptapp-header.png"/>
                 </div>
             </div>
         </div>
          {/* Meta */}
          <div className="casestudy-panel">
-            <div className="grid one-third-two-thirds extra-top-padding">
+            <div className="grid one-third-two-thirds full-width-mobile extra-top-padding no-top-padding-mobile">
                 <div className="gray sub-panel meta">
                     <div>
                         <span className="">Client:</span><span className="thin"> Personal project</span>
@@ -31,8 +30,8 @@ const HealthScheduling = () => (
                     “How might we make scheduling appointments more accessible and efficient for patients?”
                 </div>
             </div>
-            <div className="extra-top-padding" style={{display: 'flex', flexDirection: 'row'}}>
-                <div className="section-subheader" style={{flex: '0 0 none', paddingRight: 40 }}>
+            <div className="extra-top-padding problems">
+                <div className="section-subheader">
                     Problems
                 </div>
                 <div style={{flex: '1 0 none'}}>
@@ -46,7 +45,7 @@ const HealthScheduling = () => (
             <div className="section-subheader">
                 POV Statements
             </div>
-            <div className="grid half-and-half grid-gap">
+            <div className="grid half-and-half full-width-mobile grid-gap">
                 <div className="quote-text">
                     “Alexa is a mother and night shift nurse who needs to book appointments on the go or during off hours so that she can sleep and run other errands during the day.”
                 </div>
@@ -59,7 +58,8 @@ const HealthScheduling = () => (
             <div className="section-subheader">
                 Ideation for making an online scheduling portal
             </div>
-            <img className="grid-image-scheduling" src="/scheduling-ideation.png"/>
+            <img className="grid-image-scheduling hidden-mobile" src="/scheduling-ideation.png"/>
+            <img className="grid-image-scheduling hidden-gt-mobile" src="/apptapp-ideation-mobile.png"/>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
@@ -70,26 +70,30 @@ const HealthScheduling = () => (
                 <br /><br />
                 For example if a patient chose a provider first and then it turned out that provider didn’t perform that procedure then they may be disappointment and/or frustrated to have to start the process over again.
             </div>
-            <div className="grid thirds extra-top-padding">
-                <img className="grid-image-scheduling" src="/healthsched-progressive-appt.png" />
-                <img className="grid-image-scheduling" src="/healthsched-progressive-selected.png" />
-                <img className="grid-image-scheduling" src="/healthsched-progressive-portal.png" />
+            <div className="sides-80">
+                <div className="grid thirds full-width-mobile extra-top-padding">
+                    <img className="grid-image-scheduling" src="/healthsched-progressive-appt.png" />
+                    <img className="grid-image-scheduling" src="/healthsched-progressive-selected.png" />
+                    <img className="grid-image-scheduling" src="/healthsched-progressive-portal.png" />
+                </div>
             </div>
             <div className="extra-top-padding">
                 When choosing the date, time, and provider I kept it all on the same screen so that the user could easily toggle between different providers or different days to find a time that would work best for them.
             </div>
-            <div className="grid thirds extra-top-padding">
-                <img className="grid-image-scheduling" src="/healthshed-dateselected.png" />
-                <img className="grid-image-scheduling" src="/healthsched-timeselected.png" />
-                <img className="grid-image-scheduling" src="/healthsched-confirm.png" />
+            <div className="sides-80">
+                <div className="grid thirds full-width-mobile extra-top-padding">
+                    <img className="grid-image-scheduling" src="/healthshed-dateselected.png" />
+                    <img className="grid-image-scheduling" src="/healthsched-timeselected.png" />
+                    <img className="grid-image-scheduling" src="/healthsched-confirm.png" />
+                </div>
             </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
                 Landing page
             </div>
-            <div className="grid two-thirds-one-third grid-gap extra-top-padding">
-                <img className="grid-image-scheduling" src="/scheduling-sfobgyn-landing.png" />
+            <div className="grid two-thirds-one-third full-width-mobile grid-gap extra-top-padding no-top-padding-mobile">
+                <img className="grid-image-scheduling" style={{ paddingLeft: 56, paddingRight: 56 }} src="/scheduling-sfobgyn-landing.png" />
                 <img className="grid-image-scheduling" src="/scheduling-sfobgyn-mobilelanding.png"/>
             </div>
         </div>
@@ -106,6 +110,49 @@ const HealthScheduling = () => (
             .grid-image-scheduling {
                 object-fit: cover;
                 width: 100%;
+            }
+            .portfolio-piece-img {
+                width: 381px;
+                height: 283px;
+            }
+            .problems {
+                display: flex;
+                flex-direction: row;
+            }
+            .problems > .section-subheader {
+                flex: 0 0 none;
+                padding-right: 40px;
+            }
+            @media only screen and (max-width: 767px) {
+                .portfolio-piece-img {
+                    margin-top: 18px;
+                    width: 184px;
+                    height: 121.59px;
+                }
+                .problems {
+                    flex-direction: column;
+                }
+                .problems > .section-subheader {
+                    padding-right: 0x;
+                }
+                .quote-text {
+                    font-size: 12px;
+                    line-height: 26px;
+                    padding: 24px 12px;
+                    padding-bottom: 50px;
+                }
+                .quote-text:first-of-type {
+                    margin-bottom: 18px;
+                }
+                .grid-image-scheduling {
+                    margin-top: 30px;
+                 }
+                .grid-image-scheduling:first-of-type {
+                    margin-top: 0px;
+                 }
+                 .sub-panel:first-of-type {
+                     margin-bottom: 18px;
+                 }
             }
         `}</style>
     </div>

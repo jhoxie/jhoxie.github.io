@@ -180,6 +180,9 @@ function MyApp({ Component, pageProps }) {
             .extra-top-padding {
                 padding-top: 60px;
             }
+            .extra-top-padding-sm {
+                padding-top: 20px;
+            }
             .sub-panel {
                 padding: 16px 30px;
                 border-radus: 6px;
@@ -206,8 +209,8 @@ function MyApp({ Component, pageProps }) {
                 line-height: 24px;
             }
             .section-subheader {
-                font-size: 32px;
-                line-height: 36px;
+                font-size: 24px;
+                line-height: 30px;
                 margin-bottom: 30px;
                 color: #3E22ED;
                 font-weight: bold;
@@ -219,8 +222,7 @@ function MyApp({ Component, pageProps }) {
             .grid-image {
                 margin: auto;
                 display: block;
-                width: 100%;
-                max-width: 1040px;
+                max-width: 100%;
             }
             .layouts {
                 margin: 0 auto;
@@ -246,12 +248,33 @@ function MyApp({ Component, pageProps }) {
                 padding: 40px;
                 display: inline-block;
             }
+            .sides-80 {
+                margin-left: 56px;
+                margin-right: 56px;
+             }
+             .nav-section {
+                font-weight: normal;
+                font-style: normal;
+                font-size: 34px;
+                line-height: 36px;
+                flex-direction: row;
+                display: flex;
+            }
+            .hidden-gt-mobile {
+                display: none;    
+            }
+            .hidden-mobile {
+                display: inherit;
+            }
             @media only screen and (max-width: 767px) {
                 .casestudy-header {
                     padding: 0 24px 24px 24px;
                 }
                 .casestudy-panel {
                     padding: 0 24px 24px 24px;
+                }
+                .extra-top-padding {
+                    padding-top: 60px;
                 }
                 .portfolio-pieces {
                     font-size: 20px;
@@ -272,6 +295,23 @@ function MyApp({ Component, pageProps }) {
                 }
                 .final-img-container {
                     padding: 8px;
+                }
+                .no-top-padding-mobile {
+                    padding-top: 0;
+                }
+                .quote-blue {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .hidden-mobile {
+                    display: none;
+                }
+                .hidden-gt-mobile {
+                    display: inherit;
+                }
+                .half-and-half-mobile {
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 36px;
                 }
               }
             }

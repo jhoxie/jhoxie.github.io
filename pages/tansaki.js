@@ -1,15 +1,14 @@
 const Tansaki = () => (
     <div className="casestudy-container">
         {/* Hero */}
-        <div className="casestudy-header">
-            <div className="grid two-thirds-one-third">
+        <div className="casestudy-header" style={{marginTop: 24}}>
+            <div className="grid two-thirds-one-third full-width-mobile">
                 <div className="grid-tile">
                     <div className="section-header">Anime recommendation generator</div>
                     <div>I was hired to redesign the landing page for Tansaki</div>
                 </div>
                 <div className="grid-tile">
-                    <img className="portfolio-piece-img" src="/anime-header.png" style={{width: 381,
-                    height: 283}}/>
+                    <img className="portfolio-piece-img" src="/anime-header.png"/>
                 </div>
             </div>
         </div>
@@ -96,15 +95,16 @@ const Tansaki = () => (
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
-                Ideation &amp; Wireframe
+                Ideation &amp; Wireframing
             </div>
-            <div className="grid quarters">
-                <img className="layouts" src="/tansaki-layout-1.png" />
-                <img className="layouts" src="/tansaki-layout-2.png" />
-                <img className="layouts" src="/tansaki-layout-3.png" />
-                <img className="layouts" src="/tansaki-layout-4.png" />
+            <div className="grid quarters full-width-mobile">
+                <img className="layouts hidden-mobile" src="/tansaki-layout-1.png" />
+                <img className="layouts hidden-mobile" src="/tansaki-layout-2.png" />
+                <img className="layouts hidden-mobile" src="/tansaki-layout-3.png" />
+                <img className="layouts hidden-mobile" src="/tansaki-layout-4.png" />
+                <img className="hidden-gt-mobile" style={{maxWidth: '100%'}} src="/tansaki-layout-mobile.png" />
             </div>
-            <img className="extra-top-padding" style={{maxWidth: 1080}} src="/tansaki-styleguide.png" />
+            <img className="extra-top-padding" style={{maxWidth: '100%'}} src="/tansaki-styleguide.png" />
         </div>
         <div className="casestudy-panel gray">
             <div className="section-subheader extra-top-padding">
@@ -117,33 +117,51 @@ const Tansaki = () => (
                 <br /><br />
                 Color, type weight/size, and spacing were thoughtfully used for a clear visual heirarchy. 
             </div>
-            <div className="grid half-and-half extra-top-padding">
-                <div>
-                    <div className="caption">Landing page</div>
-                    <img className="grid-image" src="/tansaki-finished-1.png" />
-                </div>
-                <div>
-                    <div className="caption">Scroll down</div>
-                    <img className="grid-image" src="/tansaki-finished-2.png" />
-                    <div className="caption extra-top-padding">Hover state</div>
-                    <img className="grid-image" src="/tansaki-finished-3.png" />
-                </div>
-            </div>
-            <div className="grid thirds extra-top-padding" style={{ paddingBottom: 60 }}>
-                <div>
-                    <div className="caption">Mobile landing</div>
-                    <img className="grid-image" src="/tansaki-mobile-1.png" />
-                </div>
-                <div>
-                    <div className="caption">Scroll down</div>
-                    <img className="grid-image" src="/tansaki-mobile-2.png" />
-                </div>
-                <div>
-                    <div className="caption">Select</div>
-                    <img className="grid-image" src="/tansaki-mobile-3.png" />
+            <div className="sides-80">
+                <div className="grid half-and-half full-width-mobile extra-top-padding">
+                    <div>
+                        <div className="caption">Landing page</div>
+                        <img className="grid-image" src="/tansaki-finished-1.png" />
+                    </div>
+                    <div>
+                        <div className="caption">Scroll down</div>
+                        <img className="grid-image" src="/tansaki-finished-2.png" />
+                        <div className="caption extra-top-padding no-top-padding-mobile">Hover state</div>
+                        <img className="grid-image" src="/tansaki-finished-3.png" />
+                    </div>
+                </div>  
+                <div className="grid thirds full-width-mobile extra-top-padding no-top-padding-mobile" style={{ paddingBottom: 60 }}>
+                    <div>
+                        <div className="caption">Mobile landing</div>
+                        <img className="grid-image" src="/tansaki-mobile-1.png" />
+                    </div>
+                    <div>
+                        <div className="caption">Scroll down</div>
+                        <img className="grid-image" src="/tansaki-mobile-2.png" />
+                    </div>
+                    <div>
+                        <div className="caption">Select</div>
+                        <img className="grid-image" src="/tansaki-mobile-3.png" />
+                    </div>
                 </div>
             </div>
         </div>
+        <style jsx>{`
+             .portfolio-piece-img {
+                width: 381px;
+                height: 283px;
+             }
+             @media only screen and (max-width: 767px) {
+                .portfolio-piece-img {
+                    width: 213px;
+                    height: 158px;
+                 }
+                 .caption {
+                    margin-top: 30px;
+                    text-align: center;
+                 }
+            }
+        `}</style>
     </div>
 );
 

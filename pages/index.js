@@ -17,6 +17,8 @@ const caseStudies = [
         @media only screen and (max-width: 767px) {
           .health-screening-img {
             margin: 0;
+            width: 232px;
+            height: 172px;
           }
         }
       `}</style>
@@ -39,6 +41,8 @@ const caseStudies = [
             @media only screen and (max-width: 767px) {
               .anime-img {
                 margin: 0;
+                width: 213.32px;
+                height: 158.41px;
               }
             }
         `}</style>
@@ -63,6 +67,10 @@ const caseStudies = [
               @media only screen and (max-width: 767px) {
                 .apptapp-img {
                   margin: 0;
+                  width: 184px;
+                  height: 121.59px;
+                  margin-top: 12px;
+                  margin-bottom: 32px;
                 }
               }
           `}</style>

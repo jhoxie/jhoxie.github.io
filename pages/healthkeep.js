@@ -14,7 +14,7 @@ const Healthkeep = () => (
         </div>
          {/* Meta */}
          <div className="casestudy-panel">
-            <div className="grid half-and-half full-width-mobile ">
+            <div className="grid half-and-half full-width-mobile">
                 <div className="gray sub-panel meta" style={{ alignSelf: 'start' }}>
                     <div>
                         <span className="medium">Date:</span><span className="thin"> August 2019</span>
@@ -73,7 +73,7 @@ const Healthkeep = () => (
         </div>
         <div className="casestudy-panel">
             Goals:
-            <div className="extra-top-padding">
+            <div className="extra-top-padding-sm">
                 <div className="gray sub-panel">
                     <ul>
                         <li>Easily navigate and maintain personal health information</li>
@@ -112,12 +112,12 @@ const Healthkeep = () => (
             </div>
             <div className="sense-of-calm">
                 <div>
-                    <img width="357" src="/healthkeep-font.png"/>
-                    <img width="357" src="/healthkeep-icons.png"/>
+                    <img src="/healthkeep-font.png"/>
+                    <img src="/healthkeep-icons.png"/>
                 </div>
                 <div>
-                    <img width="357" src="/healthkeep-buttons.png"/>
-                    <img width="357" src="/healthkeep-color.png"/>
+                    <img src="/healthkeep-buttons.png"/>
+                    <img src="/healthkeep-color.png"/>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@ const Healthkeep = () => (
                             </div>
                         </div>
                         <div className="drawing-board-img-container">
-                            <img  src="/healthkeep-early2.png"/>
+                            <img src="/healthkeep-early2.png"/>
                             <div style={{textAlign: 'center', marginTop: 10}}>
                                 <i style={{fontSize: 16, lineHeight: '19px'}}>Card reveal</i>
                             </div>
@@ -160,7 +160,7 @@ const Healthkeep = () => (
             </div>
             <div className="extra-top-padding">
                 <div className="final-img-container">
-                    <img className="final-img-1" src="/healthkeep-final1.png"/>
+                    <img className="final-img final-img-1" src="/healthkeep-final1.png"/>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@ const Healthkeep = () => (
             </div>
             <div>
                 <div className="final-img-container">
-                    <img className="final-img-2" src="/healthkeep-final2.png"/>
+                    <img className="final-img final-img-2" src="/healthkeep-final2.png"/>
                 </div>
             </div>
         </div>
@@ -180,7 +180,7 @@ const Healthkeep = () => (
             </div>
             <div>
                 <div className="final-img-container">
-                    <img className="final-img-3" src="/healthkeep-final3.png"/>
+                    <img className="final-img final-img-3" src="/healthkeep-final3.png"/>
                 </div>
             </div>
         </div>
@@ -209,6 +209,7 @@ const Healthkeep = () => (
             }
             .sense-of-calm img {
                 margin: 10px;
+                width: 357px;
             }
             .drawing-board {
                 margin: auto;
@@ -273,6 +274,9 @@ const Healthkeep = () => (
                     flex-direction: column;
                     display: flex;
                 }
+                .sense-of-calm img {
+                    width: 327px;
+                }
                 .img-grid-container img {
                     margin: 4px;
                 }
@@ -284,6 +288,9 @@ const Healthkeep = () => (
                 }
                 .drawing-board-img-container {
                     margin: 10px;
+                }
+                .final-img {
+                    
                 }
                 .final-img-1 {
                     width: 328px;
