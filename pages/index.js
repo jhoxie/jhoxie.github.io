@@ -110,7 +110,7 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         margin: 15px 0;
         cursor: pointer;
       }
-      .portfolio-piece:hover .portfolio-piece {
+      .portfolio-piece:hover {
         background-color: rgba(62, 34, 237, 0.3);
         transition: background-color 0.3s ease;
       }

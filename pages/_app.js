@@ -63,6 +63,12 @@ function MyApp({ Component, pageProps }) {
                 }
               }
             }
+            @media (min-width: 1140px) {
+                main {
+                    max-width: 1140px;
+                    margin: auto;
+                }
+            }
 
             .content {
                 font-weight: normal;
