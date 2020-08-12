@@ -60,11 +60,14 @@ const About = () => (
                 }
                 .birding-img {
                     width: 100%;
+                    margin-top: 24px;
                     margin-right: 0px;
+                    margin-bottom: 24px;
                 }
                 .marvin-img {
                     width: 100%;
                     margin-left: 0px;
+                    margin-top: 24px;
                 }
             }
         `}</style>

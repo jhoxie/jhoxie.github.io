@@ -50,11 +50,12 @@ const Tansaki = () => (
                 </div>
             </div>
         </div>
-        <div className="casestudy-panel gray extra-top-padding">
+        <div className="casestudy-panel extra-top-padding gray">
             <div className="section-subheader">
                 Before
             </div>
-            <img className="grid-image" src="/tansaki-critiques.png" />
+            <img className="grid-image hidden-mobile" src="/tansaki-critiques.png" />
+            <img className="grid-image hidden-gt-mobile" src="/tansaki-notes-mobile.png" />
         </div>
         {/* Background */}
         <div className="casestudy-panel extra-top-padding">
@@ -106,7 +107,7 @@ const Tansaki = () => (
             </div>
             <img className="extra-top-padding" style={{maxWidth: '100%'}} src="/tansaki-styleguide.png" />
         </div>
-        <div className="casestudy-panel gray">
+        <div className="casestudy-panel extra-top-padding gray">
             <div className="section-subheader extra-top-padding">
                 Final Designs
             </div>
@@ -151,7 +152,7 @@ const Tansaki = () => (
                 width: 381px;
                 height: 283px;
              }
-             @media only screen and (max-width: 767px) {
+             @media only screen and (max-width: 767px)  {
                 .portfolio-piece-img {
                     width: 213px;
                     height: 158px;

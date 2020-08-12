@@ -1,6 +1,6 @@
 import Instagram from '../svgs/instagram.svg';
 import Behance from '../svgs/behance.svg';
-import Close from '../svgs/menu.svg';
+import Exit from '../svgs/exit.svg';
 import Menu from '../svgs/menu.svg';
 import { withRouter } from 'next/router'
 import Link from 'next/link'
@@ -11,7 +11,7 @@ const Nav = ({ router }) => {
     return (
         <div className={menuOpen ? 'header open' : 'header'}>
             <div className="header-line">
-                <div className="nav-section">
+                <div className="nav-section" onClick={() => setMenuOpen(false)}>
                     <Link href="/">
                         JH
                     </Link>
@@ -26,16 +26,16 @@ const Nav = ({ router }) => {
                     {/* <a href="" className="nav-item">Resume</a> */}
                 </div>
                 <div className="nav-section hidden-gt-mobile" onClick={() => setMenuOpen(!menuOpen)}>
-                    {menuOpen ? <span style={{padding: '0 6px'}}>X</span> : <Menu /> }
+                    {menuOpen ? <Exit /> : <Menu /> }
                 </div>
             </div>
             {menuOpen && (
                 <>
                     <div className="nav-section menu menu-expanded hidden-gt-mobile">
-                        <div className={router.pathname === '/about' && 'selected'}>
+                        <div className={router.pathname === '/about' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
                             <Link href="/about">About</Link>
                         </div>
-                        <div className={router.pathname === '/' && 'selected'}>
+                        <div className={router.pathname === '/' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
                             <Link href="/">Work</Link>
                         </div>
                         {/* <a href="" className="nav-item">Resume</a> */}
@@ -121,11 +121,15 @@ const Nav = ({ router }) => {
             }
             .nav-section.menu > div > a {
                 margin-left: auto;
-                margin-top: 48px;
-                margin-bottom: 48px;
+                margin-top: 24px;
+                margin-bottom: 24px;
                 display: inline-block;
                 text-align: center;
             }
+            .nav-section.menu-expanded {
+                flex-direction: column;
+            }
+            
             .menu > div:first-child > a {
                 margin-top: 100px;
             }

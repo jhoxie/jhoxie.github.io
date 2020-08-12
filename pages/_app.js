@@ -274,7 +274,7 @@ function MyApp({ Component, pageProps }) {
                     padding: 0 24px 24px 24px;
                 }
                 .extra-top-padding {
-                    padding-top: 60px;
+                    padding-top: 24px;
                 }
                 .portfolio-pieces {
                     font-size: 20px;
