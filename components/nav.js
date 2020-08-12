@@ -86,13 +86,13 @@ const Nav = ({ router }) => {
             .nav-subsection {
                 margin-top: 20px;
                 font-size: 18px;
-                line-height: 21px;
+                line-height: 24px;
             }
             .nav-subsection * {
                 display: block;
             }
             .nav-subsection a {
-                line-height: 36px;
+                line-height: 24px;
             }
             .outbound-link-spacer {
                 width: 16px;

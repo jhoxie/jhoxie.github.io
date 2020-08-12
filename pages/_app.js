@@ -313,6 +313,14 @@ function MyApp({ Component, pageProps }) {
                     grid-template-columns: 1fr 1fr;
                     column-gap: 36px;
                 }
+                .heading.main {
+                    font-size: 32px;
+                    line-height: 50px;
+                }
+                .content {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
               }
             }
         `}</style>
