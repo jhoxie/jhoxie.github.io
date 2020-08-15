@@ -1,5 +1,5 @@
 const About = () => (
-    <div style={{paddingLeft: 200, paddingRight: 200}}>
+    <div className="about">
         <div className="heading main">
             My name is Julie Hoxie and I’m a product designer living in San Francisco.
         </div>
@@ -31,6 +31,10 @@ const About = () => (
             </div>
         </div>
         <style jsx>{`
+            .about {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
             .img-row {
                 display: flex;
                 flex-direction: row;
@@ -53,6 +57,10 @@ const About = () => (
                 line-height: 19px;
             }
             @media only screen and (max-width: 767px) {
+                .about {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
                 .img-row {
                     display: flex;
                     flex-direction: column;
