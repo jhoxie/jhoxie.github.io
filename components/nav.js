@@ -139,6 +139,9 @@ const Nav = ({ router }) => {
             .menu-expanded {
                 flex: 1 1 auto;
             }
+            .hidden-gt-mobile .outbound-links * {
+                display: inline-block;
+            }
         `}</style>
     </div>
     );

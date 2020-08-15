@@ -22,7 +22,7 @@ const About = () => (
             <div className="img-row">
                 <div className="birding-img">
                     <img src="/birding.png"/>
-                    <span className="caption">Birding in Gold Gate Park.</span>
+                    <span className="caption">Birding in Golden Gate Park.</span>
                 </div>
                 <div className="marvin-img">
                     <img src="/marvin-2.png"/>
