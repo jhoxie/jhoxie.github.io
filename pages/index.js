@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const caseStudies = [
   {
-    studyHref: 'healthkeep',
+    studyHref: '/healthkeep',
     title: 'Health screening app',
     subtitle: 'How user research helped guide a major pivot',
     image: (<>
@@ -25,7 +25,7 @@ const caseStudies = [
     </>),
   },
   {
-    studyHref: 'tansaki',
+    studyHref: '/tansaki',
     title: 'Anime search tool redesign',
     subtitle: 'A project to improve appointment scheduling at a healthcare clinic',
     image: (
@@ -50,7 +50,7 @@ const caseStudies = [
     ),
   },
   {
-    studyHref: 'healthscheduling',
+    studyHref: '/healthscheduling',
     title: 'Healthcare appointment scheduling',
     subtitle: 'A client hired me to create a better landing page CTA',
     image: (
