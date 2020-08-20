@@ -11083,7 +11083,7 @@ var PortfolioPiece = function PortfolioPiece(_ref) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjewelyhoxie%2Fcode%2Fjulie-portfolio%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************/
@@ -11106,5 +11106,5 @@ module.exports = dll_b29684ed772f9fa2503e;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
