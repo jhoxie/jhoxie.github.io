@@ -27,7 +27,7 @@ const caseStudies = [
   {
     studyHref: '/tansaki',
     title: 'Anime search tool redesign',
-    subtitle: 'A project to improve appointment scheduling at a healthcare clinic',
+    subtitle: 'A client hired me to create a better landing page',
     image: (
       <>
           <img className="portfolio-piece-img anime-img" src="/anime-header.png" />
@@ -52,7 +52,7 @@ const caseStudies = [
   {
     studyHref: '/healthscheduling',
     title: 'Healthcare appointment scheduling',
-    subtitle: 'A client hired me to create a better landing page CTA',
+    subtitle: 'Improve appointment scheduling at a specialized heath clinic',
     image: (
       <>
         <img className="portfolio-piece-img apptapp-img" src="/apptapp-header.png" />

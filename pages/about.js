@@ -7,10 +7,10 @@ const About = () => (
             I have a B.A. in Psychology and a B.S. in Nursing. I strongly believe in listening, understanding, and advocating for people.
         </p>
         <p className="content">
-            Design is about the communication between products and people and I am a great listener. 
+        Human anxiety motivates me to design easy to use and efficient experiences. 
         </p>
         <p className="content">
-            I’m obessed with efficiency and making positive digital experiences that help people and businesses accomplish their goals.
+        In my free time I like to slowly make coffee, paint abstractions, and terraform my Animal Crossing island.
         </p>
         <p className="content">
             Let’s work together!
@@ -20,14 +20,15 @@ const About = () => (
         </p>
         <div className="extra-top-padding">
             <div className="img-row">
+            <div className="marvin-img">
+                    <img src="/marvin-2.png"/>
+                    <span className="caption">With Marvin, my rescue mutt pup.</span>
+                </div>
                 <div className="birding-img">
                     <img src="/birding.png"/>
                     <span className="caption">Birding in Golden Gate Park.</span>
                 </div>
-                <div className="marvin-img">
-                    <img src="/marvin-2.png"/>
-                    <span className="caption">With Marvin, my rescue mutt pup.</span>
-                </div>
+            
             </div>
         </div>
         <style jsx>{`
@@ -42,11 +43,11 @@ const About = () => (
             }
             .birding-img {
                 width: 43%;
-                margin-right: 30px;
+                margin-left: 30px;
             }
             .marvin-img {
                 width: 57%;
-                margin-left: 30px;
+                margin-right: 30px;
             }
             .img-row img {
                 width: 100%;

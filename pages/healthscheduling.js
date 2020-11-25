@@ -35,9 +35,9 @@ const HealthScheduling = () => (
                     Problems
                 </div>
                 <div style={{flex: '1 0 none'}}>
-                    An OBGYN clinic I worked at did not have online scheduling. patients would either have to call to schedule or send a message to the provider through the online portal. This was time consuming and in convinent for patients.
+                    An OBGYN clinic I worked at did not have online scheduling. Patients would either have to call to schedule or send a message to the provider through an online portal. This was time consuming and inconvenient for patients.
                     <br /><br />
-                    There are many factors that go into scheduling such as provider availability, sufficient staffing, room availability, and variables for appointment type (i.e. time, supplies)
+                    There are many factors that go into scheduling such as provider availability, sufficient back office staffing, room availability, and considerations appointment type (i.e. time, supplies)
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ const HealthScheduling = () => (
             </div>
             <div className="grid half-and-half full-width-mobile grid-gap">
                 <div className="quote-text">
-                    “Alexa is a mother and night shift nurse who needs to book appointments on the go or during off hours so that she can sleep and run other errands during the day.”
+                    “Alexa is a mother and night shift nurse who needs to book appointments on the go and during off hours so that she can sleep and run other errands during the day.”
                 </div>
                 <div className="quote-text">
                     “Mina is commuting a long distance to make her appointment and needs to explore several appointment options to determine when would be the best time with the least amount of traffic.”
@@ -68,7 +68,7 @@ const HealthScheduling = () => (
             <div>
                 In order to not overwhelm the user and to keep their expectations grounded they had to answer each question successively. 
                 <br /><br />
-                For example if a patient chose a provider first and then it turned out that provider didn’t perform that procedure then they may be disappointment and/or frustrated to have to start the process over again.
+                For example if a patient chose a provider first and it turned out that provider didn’t perform that procedure then they may be disappointed or frustrated to have to start the process over again.
             </div>
             <div className="sides-80">
                 <div className="grid thirds full-width-mobile extra-top-padding">

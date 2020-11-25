@@ -32,7 +32,7 @@ const Healthkeep = () => (
             <div>
             You are sitting in your new doctor’s office.  
             <br /><br />
-            You are asked about your recent screenings. You did not bring your health records. You do not have access to your previous healthcare portal.
+            You are asked about your recent health screenings. You did not bring your health records. You do not have access to your previous healthcare portal.
             <br /><br />
             Luckily you have Health Keep and you can quickly and securely open the app to find your most recent test results and recommendations.
             </div>
@@ -42,7 +42,7 @@ const Healthkeep = () => (
                 Your health in your own hands
             </div>
             <div>
-            As a registered nurse at an OBGYN clinic I helped people have a better understanding of their health. I wanted patients to have more autonomy to learn and have confidence in their health.
+            As a registered nurse at an OBGYN clinic I helped people have a better understanding of their health. I wanted to find a way for patients to have more autonomy to learn and have confidence in their health.
             <br /><br />
             Two problems I wanted to solve for:
             </div>
@@ -56,7 +56,7 @@ const Healthkeep = () => (
             </div>
         </div>
         <div className="casestudy-panel">
-            I set out to create a educational tool to help people understanding what they were being screened for and what their individual results meant.
+            I set out to create a educational tool to help people understand what they were being screened for and what their results meant.
             <br /><br />
             But then user research changed everything. 
             <br /><br />
@@ -77,7 +77,7 @@ const Healthkeep = () => (
                 <div className="gray sub-panel">
                     <ul>
                         <li>Easily navigate and maintain personal health information</li>
-                        <li>Clearly understand what is being screened for, what the results mean, and when to follow up</li>
+                        <li>Clearly understand what is being screened for, what the results mean, and next steps</li>
                         <li style={{paddingBottom: 0}}>Decrease anxiety with an inituitive and calming interface</li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@ const Healthkeep = () => (
                 People want access and autonomy over their health information
             </div>
             <div>
-                User testing showed that one easily accessible place to store all healthcare data would bring greater clarity and autonomy over someone’s health status and how to manage their care going forward. The app is a space that offers understanding and self-advocacy.
+                User testing showed that one easily accessible place to store all health data would bring greater clarity and autonomy over your health status and how to manage your care going forward. The app is a space that offers understanding and self-advocacy.
             </div>
             <div className="extra-top-padding img-grid-container">
                 <div className="gray img-grid-subcontainer">
@@ -146,7 +146,7 @@ const Healthkeep = () => (
                     </div>
                 </div>
                 <div className="extra-top-padding">
-                    I went back to sketching and found a pattern that solved the issue of privacy while also being a more common and friendly design.
+                    I went back to sketching and used an easily recognizable pattern that solved the issue of privacy while also being a more common and intuitive design.
                 </div>
                 
             </div>
@@ -156,7 +156,7 @@ const Healthkeep = () => (
                 Result storage with privacy in mind
             </div>
             <div>
-                Initially opening the app would require a password everytime you open and close the app and would have a timed lockout. Once signed in, the actual results are still covered and only exposed when the user pressed the arrow to reveal them. 
+                The app would be password protected and have a timed lockout if the user wasn't actively using the app. Once signed in, the results are covered and only exposed when the user pressed the arrow to reveal them. 
             </div>
             <div className="extra-top-padding">
                 <div className="final-img-container">

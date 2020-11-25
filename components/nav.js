@@ -43,7 +43,7 @@ const Nav = ({ router }) => {
                     <div className="thin-line" />
                     <div className="header-line hidden-gt-mobile">
                         <div className="outbound-links" style={{margin: 'auto'}}>
-                            <a href="https://www.behance.net/jewelyhoxie" target="_blank"><Behance /></a>
+                            <a href="https://www.behance.net/jhoxie" target="_blank"><Behance /></a>
                             <span className="outbound-link-spacer" />
                             <a href="https://www.instagram.com/reneehoxie/" target="_blank"><Instagram /></a>
                         </div>
@@ -58,7 +58,7 @@ const Nav = ({ router }) => {
                         <div>SF, CA</div>
                     </div>
                     <div className="outbound-links hidden-mobile">
-                        <a href="https://www.behance.net/jewelyhoxie" target="_blank"><Behance /></a>
+                        <a href="https://www.behance.net/jhoxie" target="_blank"><Behance /></a>
                         <span className="outbound-link-spacer" />
                         <a href="https://www.instagram.com/reneehoxie/" target="_blank"><Instagram /></a>
                     </div>

@@ -31,14 +31,14 @@ const Tansaki = () => (
                 <span className="medium">Client</span>
             </div>
             <div>
-                Tansaki is website that provides recommendations for anime movies and tv shows. The creator engineered the website as a person project because he wanted a better way to get recommendations based off of shows/movies he already liked.
+                Tansaki is a website that provides recommendations for anime movies and tv shows. The creator engineered the website as a personal project because he wanted a better way to get recommendations based off of shows/movies he already liked.
             </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
                 Audience
             </div>
-            <div>People ages 18 and up with internet access and who are already interested in anc actively watch anime online.</div>
+            <div>Teenages and adults with internet access and who are already interested in and actively watch anime online.</div>
         </div>
         <div className="casestudy-panel">
             <div className="">
@@ -46,7 +46,7 @@ const Tansaki = () => (
                     Project Overview
                 </div>
                 <div>
-                    I was hired by Tansaki to redesign landing page so people have a better idea of what the webside is about.
+                    I was hired by Tansaki to redesign a landing page so people have a better idea of what the website is about.
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@ const Tansaki = () => (
                 </div>
                 <br />
                 <div>
-                    Time and distance barrier as we do not live close to each other and I was a full time employee at another company while working on this project.
+                    Time and distance barrier as we do not live close to each other and we both had separate full time jobs.
                 </div>
             </div>
         </div>
@@ -114,9 +114,11 @@ const Tansaki = () => (
             <div>
                 A clear Call To Action allows first time users to understand the purpose of the website.
                 <br /><br />
-                Top Searches component was moved to the top and gave the shows a priority to create more understanding and made it easier for the user to click through the filter options.
+                Top Searches component was moved to the top to help increase engagment for repeat users 
                 <br /><br />
-                Color, type weight/size, and spacing were thoughtfully used for a clear visual heirarchy. 
+                The drop down menu was switch to an open list so it would take people less clicks to get to their destination.
+                <br /><br />
+                A clear visual heirarchy was created through color, font, and spacing choices.
             </div>
             <div className="sides-80">
                 <div className="grid half-and-half full-width-mobile extra-top-padding">
@@ -126,9 +128,9 @@ const Tansaki = () => (
                     </div>
                     <div>
                         <div className="caption">Scroll down</div>
-                        <img className="grid-image" src="/tansaki-finished-2.png" />
-                        <div className="caption extra-top-padding no-top-padding-mobile">Hover state</div>
                         <img className="grid-image" src="/tansaki-finished-3.png" />
+                        <div className="caption extra-top-padding no-top-padding-mobile">Hover state</div>
+                        <img className="grid-image" src="/tansaki-finished-2.png" />
                     </div>
                 </div>  
                 <div className="grid thirds full-width-mobile extra-top-padding no-top-padding-mobile" style={{ paddingBottom: 60 }}>
@@ -145,6 +147,12 @@ const Tansaki = () => (
                         <img className="grid-image" src="/tansaki-mobile-3.png" />
                     </div>
                 </div>
+                <div className="section-subheader">
+                Reflection
+                </div>
+                <div>
+                I'm interested to do this project again with user testing in order to measure the success of the project and to see what other features people would be interested in. 
+                </div>    
             </div>
         </div>
         <style jsx>{`
