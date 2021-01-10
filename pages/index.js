@@ -19,6 +19,7 @@ const caseStudies = [
             margin: 0;
             width: 232px;
             height: 172px;
+            margin-bottom: 32px;
           }
         }
       `}</style>
@@ -45,7 +46,10 @@ const caseStudies = [
               height: 209.14px;
             }
             @media only screen and (max-width: 767px) {
-              
+              .portfolio-piece-img-container {
+                margin-right: 8px;
+                margin-bottom: 32px;
+              }
             }
         `}</style>
       </>
