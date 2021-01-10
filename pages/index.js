@@ -2,20 +2,20 @@ import Link from 'next/link'
 
 const caseStudies = [
   {
-    studyHref: '/healthkeep',
-    title: 'Health screening app',
-    subtitle: 'How user research helped guide a major pivot',
+    studyHref: '/discovery',
+    title: 'Discovery experience for a Patreon-like platform',
+    subtitle: 'Creating credibility and community through browsing',
     image: (<>
-      <img className="portfolio-piece-img health-screening-img" src="/healthkeep-header.png"/>
+      <img className="portfolio-piece-img discovery-img" src="/discovery-1.png"/>
         <style jsx>{`
-        .health-screening-img {
-          width: 335px;
-          height: 249px;
-          margin-top: 68px;
+        .discovery-img {
+          width: 300px;
+          height: 249.53px;
+          margin-top: 8px;
           margin-right: 80px;
         }
         @media only screen and (max-width: 767px) {
-          .health-screening-img {
+          .discovery-img {
             margin: 0;
             width: 232px;
             height: 172px;
@@ -25,25 +25,27 @@ const caseStudies = [
     </>),
   },
   {
-    studyHref: '/tansaki',
-    title: 'Anime search tool redesign',
-    subtitle: 'A client hired me to create a better landing page',
+    studyHref: '/goodreads',
+    title: 'Case Study: Goodreads Redesign',
+    subtitle: 'Optimizing user experience through an analysis of information achitecture',
     image: (
       <>
-          <img className="portfolio-piece-img anime-img" src="/anime-header.png" />
+          <div className="portfolio-piece-img-container">
+              <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
+              <span style={{ width: 17, display: 'inline-block' }}/>
+              <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
+          </div>
           <style jsx>{`
-            .anime-img {
-              width: 382px;
-              height: 284px;
-              margin-top: 16px;
-              margin-right: 70px;
+            .portfolio-piece-img-container {
+              margin-top: 8px;
+              margin-right: 102px;
+            }
+            .portfolio-piece-img {
+              width: 110px;
+              height: 209.14px;
             }
             @media only screen and (max-width: 767px) {
-              .anime-img {
-                margin: 0;
-                width: 213.32px;
-                height: 158.41px;
-              }
+              
             }
         `}</style>
       </>
@@ -51,7 +53,7 @@ const caseStudies = [
   },
   {
     studyHref: '/healthscheduling',
-    title: 'Healthcare appointment scheduling',
+    title: 'Healthcare scheduling app',
     subtitle: 'Improve appointment scheduling at a specialized heath clinic',
     image: (
       <>
@@ -62,7 +64,7 @@ const caseStudies = [
                 height: 226px;
                 margin-top: 46px;
                 margin-bottom: 46px;
-                margin-right: 46px;
+                margin-right: 80px;
               }
               @media only screen and (max-width: 767px) {
                 .apptapp-img {

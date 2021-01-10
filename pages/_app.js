@@ -63,9 +63,9 @@ function MyApp({ Component, pageProps }) {
                 }
               }
             }
-            @media (min-width: 1140px) {
+            @media (min-width: 1440px) {
                 main {
-                    max-width: 1140px;
+                    max-width: 1280px;
                     margin: auto;
                 }
             }
@@ -92,13 +92,14 @@ function MyApp({ Component, pageProps }) {
             .section-header {
                 font-weight: bold;
                 font-size: 42px;
+                line-height: 50px;
                 color: #3E23EB;
                 padding-bottom: 12px;
             }
 
             .section-subheader {
                 font-size: 24px;
-                line-height: 28px;
+                line-height: 36px;
             }
 
             footer {
@@ -125,6 +126,9 @@ function MyApp({ Component, pageProps }) {
 
         `}</style>
         <style jsx global>{`
+            video {
+            pointer-events: none;
+          }
             .portfolio-pieces {
                 font-size: 24px;
                 line-height: 36px;
@@ -138,9 +142,10 @@ function MyApp({ Component, pageProps }) {
                 align-items: stretch;
                 justify-content: stretch;
                 font-size: 24px;
-                line-height: 30px;
-                font-weight: normal;
+                line-height: 36px;
+                font-weight: 400;
                 font-style: normal;
+                max-width: 100%;
             }
             .casestudy-header {
                 padding: 0 120px 60px 120px;
@@ -151,8 +156,15 @@ function MyApp({ Component, pageProps }) {
             .grid {
                 display: grid;
             }
+            
             .two-thirds-one-third {
                 grid-template-columns: 2fr 1fr;
+            }
+            .three-quarters-one-quarter {
+                grid-template-columns: 3fr 1fr;
+            }
+            .one-quarter-three-quarters {
+                grid-template-columns: 1fr 3fr;
             }
             .one-third-two-thirds {
                 grid-template-columns: 1fr 2fr;
@@ -191,7 +203,7 @@ function MyApp({ Component, pageProps }) {
             }
             .sub-panel {
                 padding: 16px 30px;
-                border-radus: 6px;
+                border-radius: 6px;
             }
             .sub-panel > div {
                 margin: 4px 0;
@@ -215,8 +227,8 @@ function MyApp({ Component, pageProps }) {
                 line-height: 24px;
             }
             .section-subheader {
-                font-size: 24px;
-                line-height: 30px;
+                font-size: 32px;
+                line-height: 36px;
                 margin-bottom: 30px;
                 color: #3E22ED;
                 font-weight: bold;

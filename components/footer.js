@@ -13,7 +13,7 @@ const Footer = () => (
                 align-items: center;
                 margin: 100px;
             }
-            a {
+            .footer a {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

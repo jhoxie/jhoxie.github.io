@@ -2,14 +2,10 @@ const HealthScheduling = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="grid two-thirds-one-third full-width-mobile extra-top-padding">
-                <div className="grid-tile" style={{ marginLeft: 0 }}>
-                    <div className="section-header">Healthcare scheduling app</div>
-                    <div>Improve appointment scheduling at a specialized heath clinic</div>
-                </div>
-                <div className="grid-tile">
-                    <img className="portfolio-piece-img" src="/apptapp-header.png"/>
-                </div>
+            <div className="section-header">Healthcare scheduling app</div>
+            <div>Improve appointment scheduling at a specialized heath clinic</div>
+            <div className="flex" style={{ marginTop: 60 }}>
+                <img className="portfolio-piece-img" src="/apptapp-header-2.png" />
             </div>
         </div>
          {/* Meta */}
@@ -43,26 +39,6 @@ const HealthScheduling = () => (
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
-                POV Statements
-            </div>
-            <div className="grid half-and-half full-width-mobile grid-gap">
-                <div className="quote-text">
-                    “Alexa is a mother and night shift nurse who needs to book appointments on the go and during off hours so that she can sleep and run other errands during the day.”
-                </div>
-                <div className="quote-text">
-                    “Mina is commuting a long distance to make her appointment and needs to explore several appointment options to determine when would be the best time with the least amount of traffic.”
-                </div>
-            </div>
-        </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader">
-                Ideation for making an online scheduling portal
-            </div>
-            <img className="grid-image-scheduling hidden-mobile" src="/scheduling-ideation.png"/>
-            <img className="grid-image-scheduling hidden-gt-mobile" src="/apptapp-ideation-mobile.png"/>
-        </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader">
                 Simplify the experience with progressive disclosure
             </div>
             <div>
@@ -86,18 +62,22 @@ const HealthScheduling = () => (
                     <img className="grid-image-scheduling" src="/healthsched-timeselected.png" />
                     <img className="grid-image-scheduling" src="/healthsched-confirm.png" />
                 </div>
-            </div>
-        </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader">
-                Landing page
-            </div>
-            <div className="grid two-thirds-one-third full-width-mobile grid-gap extra-top-padding no-top-padding-mobile">
-                <img className="grid-image-scheduling" style={{ paddingLeft: 56, paddingRight: 56 }} src="/scheduling-sfobgyn-landing.png" />
-                <img className="grid-image-scheduling" src="/scheduling-sfobgyn-mobilelanding.png"/>
+                <div className="grid full-width">
+                    <video controls
+                        src="/Schedule_Prototype.mov"
+                        poster="/scheduling-cover.png"
+                        className="grid-image extra-top-padding"
+                        style={{maxWidth: 686, width: '100%'}}
+                        autoPlay loop muted playsInline />
+                </div>
             </div>
         </div>
         <style jsx>{`
+            .casestudy-header {
+                margin-top: 32px;
+                padding-bottom: 0;
+                text-align: center;
+            }
             .quote-text {
                 font-weight: normal;
                 font-size: 18px;
@@ -112,8 +92,7 @@ const HealthScheduling = () => (
                 width: 100%;
             }
             .portfolio-piece-img {
-                width: 381px;
-                height: 283px;
+                max-width: 708.22px;
             }
             .problems {
                 display: flex;
