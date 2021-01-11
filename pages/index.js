@@ -32,9 +32,9 @@ const caseStudies = [
     image: (
       <>
           <div className="portfolio-piece-img-container">
-              <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
-              <span style={{ width: 17, display: 'inline-block' }}/>
               <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
+              <span style={{ width: 17, display: 'inline-block' }}/>
+              <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
           </div>
           <style jsx>{`
             .portfolio-piece-img-container {

@@ -10,7 +10,7 @@ const Discovery = () => (
         </div>
          {/* Meta */}
          <div className="casestudy-panel">
-            <div className="grid problems full-width-mobile extra-top-padding no-top-padding-mobile">
+            <div className="grid one-third-two-thirds problems full-width-mobile extra-top-padding no-top-padding-mobile">
                 <div className="gray sub-panel meta no-wrap">
                     <div>
                         <span className="">Client:</span><span className="thin"> Ampled</span>
@@ -119,8 +119,8 @@ const Discovery = () => (
                 max-width: 721.67px;
             }
             .problems {
-                display: flex;
-                flex-direction: row;
+                // display: flex;
+                // flex-direction: row;
                 align-items: center;
             }
             .problems > .section-subheader {
@@ -171,11 +171,6 @@ const Discovery = () => (
              .no-wrap {
                 white-space: nowrap;
              }
-             .casestudy-header {
-                margin-top: 32px;
-                padding-bottom: 0;
-                text-align: center;
-            }
             @media only screen and (min-width: 768px) {
                 .disclaimer {
                     margin-left: 42px;
@@ -183,9 +178,6 @@ const Discovery = () => (
                 .sub-panel-subheader {
                     margin-bottom: 16px;
                     font-size: 16px;
-                }
-                .casestudy-header {
-                    padding-top: 78px;
                 }
             }
             @media only screen and (max-width: 767px) {

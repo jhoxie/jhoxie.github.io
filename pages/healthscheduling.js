@@ -63,21 +63,19 @@ const HealthScheduling = () => (
                     <img className="grid-image-scheduling" src="/healthsched-confirm.png" />
                 </div>
                 <div className="grid full-width">
+                    <div className="section-subheader extra-top-padding">
+                        Prototype
+                    </div>
                     <video controls
                         src="/Schedule_Prototype.mov"
                         poster="/scheduling-cover.png"
-                        className="grid-image extra-top-padding"
+                        className="grid-image extra-top-padding-sm"
                         style={{maxWidth: 686, width: '100%'}}
                         autoPlay loop muted playsInline />
                 </div>
             </div>
         </div>
         <style jsx>{`
-            .casestudy-header {
-                margin-top: 32px;
-                padding-bottom: 0;
-                text-align: center;
-            }
             .quote-text {
                 font-weight: normal;
                 font-size: 18px;

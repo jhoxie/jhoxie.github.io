@@ -5,15 +5,15 @@ const GoodReads = () => (
             <div className="section-header">Case Study: Goodreads Redesign</div>
             <div>Optimizing user experience through an analysis of information achitecture</div>
             <div className="flex" style={{ marginTop: 60 }}>
-                <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
-                <span style={{ width: 20, display: 'inline-block' }}/>
                 <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
+                <span style={{ width: 20, display: 'inline-block' }}/>
+                <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
             </div>
         </div>
          {/* Meta */}
          <div className="casestudy-panel">
-            <div className="grid problems full-width-mobile extra-top-padding no-top-padding-mobile">
-                <div className="gray sub-panel meta no-wrap">
+            <div className="grid problems one-third-two-thirds full-width-mobile extra-top-padding no-top-padding-mobile">
+                <div className="gray sub-panel meta">
                     <div>
                         <span className="">Client:</span><span className="thin"> Personal project</span>
                     </div>
@@ -54,7 +54,7 @@ const GoodReads = () => (
             <div className="section-subheader extra-top-padding-sm">Why is this important?</div>
             <ul>
                 <li>Familiarity, consistency, and user engagment</li>
-                <li><a href="">Aesthetic-Usability Effect</a></li>
+                <li><a href="https://www.nngroup.com/articles/aesthetic-usability-effect" target="_blank">Aesthetic-Usability Effect</a></li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">
                 Research &amp; Information Architecture Analysis
@@ -62,14 +62,14 @@ const GoodReads = () => (
             <div>
                 I did a competitve analysis of similar apps to see what made Goodeads stand out from it’s competition.
                 <br /><br />
-                I documented the current sitemap for both mobile and desktop versions of Goodreads using <a>Octopus.do</a>. 
+                I documented the current sitemap for both mobile and desktop versions of Goodreads using <a href="htts://octopus.do" target="_blank">Octopus.do</a>. 
                 <br /><br />
-                Next I conducted user research with <a>Optimal Workshop’s</a> virtual card sorting feature. 
+                Next I conducted user research with <a href="https://www.optimalworkshop.com" target="_blank">Optimal Workshop’s</a> virtual card sorting feature. 
             </div>
         </div>
         <div className="casestudy-panel">
             <div className="gray grid half-and-half full-width-mobile sub-panel">
-                <div className="grid-image">
+                <div className="grid-image" style={{ margin: '0 0' }}>
                     <img className="grid-image" style={{ maxWidth: 521 }} src="/goodreads-current-mobile.png" />
                     <div className="hidden-mobile">
                         <div style={{ fontSize: 20 }} className="extra-top-padding-sm">
@@ -179,8 +179,8 @@ const GoodReads = () => (
                 max-width: 317px;
             }
             .problems {
-                display: flex;
-                flex-direction: row;
+                // display: flex;
+                // flex-direction: row;
                 align-items: center;
             }
             .problems > .section-subheader {
@@ -200,6 +200,7 @@ const GoodReads = () => (
                 height: 18px;
                 background-color: #3582EC;
                 margin-right: 8px;
+                flex-shrink: 0;
              }
              .color-swatch.blue {
                 background-color: #3582EC;
@@ -231,11 +232,6 @@ const GoodReads = () => (
              .no-wrap {
                 white-space: nowrap;
              }
-             .casestudy-header {
-                margin-top: 32px;
-                padding-bottom: 0;
-                text-align: center;
-            }
             @media only screen and (min-width: 768px) {
                 .disclaimer {
                     margin-left: 42px;
@@ -243,9 +239,6 @@ const GoodReads = () => (
                 .sub-panel-subheader {
                     margin-bottom: 16px;
                     font-size: 16px;
-                }
-                .casestudy-header {
-                    padding-top: 78px;
                 }
             }
             @media only screen and (max-width: 767px) {

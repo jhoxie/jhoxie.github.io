@@ -72,6 +72,7 @@ const About = () => (
                     margin-top: 24px;
                     margin-right: 0px;
                     margin-bottom: 24px;
+                    margin-left: 0;
                 }
                 .marvin-img {
                     width: 100%;

@@ -149,6 +149,9 @@ function MyApp({ Component, pageProps }) {
             }
             .casestudy-header {
                 padding: 0 120px 60px 120px;
+                margin-top: 32px;
+                padding-bottom: 0;
+                text-align: center;
             }
             .casestudy-header .section-subheader {
                 color: #2A16A4;
@@ -283,6 +286,11 @@ function MyApp({ Component, pageProps }) {
             }
             .hidden-mobile {
                 display: inherit;
+            }
+            @media only screen and (min-width: 768px) {
+                .casestudy-header {
+                    padding-top: 78px;
+                }
             }
             @media only screen and (max-width: 767px) {
                 .casestudy-header {
