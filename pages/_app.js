@@ -29,6 +29,10 @@ function MyApp({ Component, pageProps }) {
                 background-color: #FFD8C1;
             }
 
+            img {
+                image-orientation: none;
+            }
+
             a {
                 color: #3E22ED;
                 text-decoration: none;
