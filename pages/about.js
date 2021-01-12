@@ -7,7 +7,7 @@ const About = () => (
             I have a B.A. in Psychology and a B.S. in Nursing. I strongly believe in listening, understanding, and advocating for people.
         </p>
         <p className="content">
-        Human anxiety motivates me to design easy to use and efficient experiences. 
+        As a designer I’m motivated to make easy and efficient experiences to prevent stress and conflict in humans by creating harmony between people and products. 
         </p>
         <p className="content">
         In my free time I like to slowly make coffee, paint abstractions, and terraform my Animal Crossing island.

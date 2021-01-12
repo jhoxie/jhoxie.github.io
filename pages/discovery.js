@@ -35,15 +35,13 @@ const Discovery = () => (
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Problem</div>
             <p>
-                A common ask from users was to make an artist browse/discovery feature.
-                <br /><br />
-                Both artists and new users wanted an easy way to see who else was on the platform.
+                A common ask from users was to make an artist browse/discovery feature. Both artists and new users wanted an easy way to see who else was on the platform.
             </p>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Why is this important?</div>
             <p>
-                Artist discovery is not a primary goal of the platform but as we continued to hear from users we learned that an artist browse page would aid in credibility (especially as we are a new platform asking for people to enter in their credit card information), a sense of community, and (information building/teaching).
+                Artist discovery is not a primary goal of the platform but as we continued to hear from users we learned that an artist browse page would aid in credibility (especially as we are a new platform asking for people to enter in their credit card information), a sense of community, and people learning more about the platform.
             </p>
         </div>
         <div className="casestudy-panel">
