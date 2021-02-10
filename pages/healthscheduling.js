@@ -26,15 +26,42 @@ const HealthScheduling = () => (
                     “How might we make scheduling appointments more accessible and efficient for patients?”
                 </div>
             </div>
-            <div className="extra-top-padding problems">
-                <div className="section-subheader">
-                    Problems
-                </div>
-                <div style={{flex: '1 0 none'}}>
-                    An OBGYN clinic I worked at did not have online scheduling. Patients would either have to call to schedule or send a message to the provider through an online portal. This was time consuming and inconvenient for patients.
-                    <br /><br />
-                    There are many factors that go into scheduling such as provider availability, sufficient back office staffing, room availability, and considerations appointment type (i.e. time, supplies)
-                </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                Problems
+            </div>
+            <div>
+                At an OBGYN clinic I worked at people had to either call our office or send a message to the provider through an online portal in order to schedule an appointment. This could only be done during office hours.
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                Why is this important?
+            </div>
+            <div style={{flex: '1 0 none'}}>
+                Scheduling appointments is time consuming for both patients and staff. 
+                <br /><br />
+                Flexible online scheduling means <strong>less time taken from staff</strong> and <strong>increase in growth</strong>/more appointments scheduled.
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                Goals/Success Metric
+            </div>
+            <div style={{flex: '1 0 none'}}>
+            <ul style={{ marginBottom: 0 }}>
+                <li>Positive patient feedback regarding clinic accessibility</li>
+                <li>More appointments scheduled</li>
+            </ul>
+            </div>
+        </div>    
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                Constraints
+            </div>
+            <div style={{flex: '1 0 none'}}>
+                At a speciality healthcare clinic there are a variety of appointments types that have different requirements such as providers, back office staffing, supplies, and time.
             </div>
         </div>
         <div className="casestudy-panel">

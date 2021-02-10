@@ -49,12 +49,18 @@ const GoodReads = () => (
             <div className="section-subheader extra-top-padding-sm">Goals</div>
             <ul>
                 <li>Optimize mobile app features for power users</li>
-                <li>Update UI</li>
+                <li>Updated UI</li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">Why is this important?</div>
             <ul>
                 <li>Familiarity, consistency, and user engagment</li>
                 <li><a href="https://www.nngroup.com/articles/aesthetic-usability-effect" target="_blank">Aesthetic-Usability Effect</a></li>
+            </ul>
+            <div className="section-subheader extra-top-padding-sm">Success Metrics</div>
+            <ul>
+                <li>App downloads</li>
+                <li>App store reviews</li>
+                <li>Increased engagement on the app</li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">
                 Research &amp; Information Architecture Analysis
