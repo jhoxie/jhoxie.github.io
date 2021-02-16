@@ -28,7 +28,7 @@ const caseStudies = [
   {
     studyHref: '/goodreads',
     title: 'Case Study: Goodreads Redesign',
-    subtitle: 'Optimizing user experience through an analysis of information achitecture',
+    subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>
           <div className="portfolio-piece-img-container">
@@ -58,7 +58,7 @@ const caseStudies = [
   {
     studyHref: '/healthscheduling',
     title: 'Healthcare scheduling app',
-    subtitle: 'Improve appointment scheduling at a specialized heath clinic',
+    subtitle: 'Improve appointment scheduling at a specialized health clinic',
     image: (
       <>
         <img className="portfolio-piece-img apptapp-img" src="/apptapp-header.png" />

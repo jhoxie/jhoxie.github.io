@@ -3,7 +3,7 @@ const GoodReads = () => (
         {/* Hero */}
         <div className="casestudy-header">
             <div className="section-header">Case Study: Goodreads Redesign</div>
-            <div>Optimizing user experience through an analysis of information achitecture</div>
+            <div>Optimizing user experience through an analysis of information architecture</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
                 <span style={{ width: 20, display: 'inline-block' }}/>

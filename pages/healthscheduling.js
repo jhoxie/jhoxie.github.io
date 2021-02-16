@@ -3,7 +3,7 @@ const HealthScheduling = () => (
         {/* Hero */}
         <div className="casestudy-header">
             <div className="section-header">Healthcare scheduling app</div>
-            <div>Improve appointment scheduling at a specialized heath clinic</div>
+            <div>Improve appointment scheduling at a specialized health clinic</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/apptapp-header-2.png" />
             </div>
