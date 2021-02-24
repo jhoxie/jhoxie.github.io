@@ -43,8 +43,8 @@ const GoodReads = () => (
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Problems</div>
             <ul>
-                <li>Key features from desktop are missing on the mobile app</li>
-                <li>Outdated UI</li>
+                <li>Decreased mobile app engagement due to limited features compared to desktop</li>
+                <li>Outdated UI contributes to negative reviews</li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">Goals</div>
             <ul>
@@ -66,11 +66,11 @@ const GoodReads = () => (
                 Research &amp; Information Architecture Analysis
             </div>
             <div>
-                I did a competitve analysis of similar apps to see what made Goodeads stand out from it’s competition.
+                I conducted user research with <a href="https://www.optimalworkshop.com" target="_blank">Optimal Workshop’s</a> virtual card sorting in order to understand user’s mental models and expectations for wayfinding.
+                <br /><br />
+                <img className="grid-image" style={{ maxWidth: 685 }} src="/goodread-cardsort.png"/>
                 <br /><br />
                 I documented the current sitemap for both mobile and desktop versions of Goodreads using <a href="htts://octopus.do" target="_blank">Octopus.do</a>. 
-                <br /><br />
-                Next I conducted user research with <a href="https://www.optimalworkshop.com" target="_blank">Optimal Workshop’s</a> virtual card sorting feature. 
             </div>
         </div>
         <div className="casestudy-panel">

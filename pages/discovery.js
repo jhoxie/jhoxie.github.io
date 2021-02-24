@@ -23,25 +23,49 @@ const Discovery = () => (
                     </div>
                 </div>
                 <div className="disclaimer">
-                    <p><i>Disclaimer:</i> The artists featured here are purely for mock up purposes. These artists are currently on the platform.</p>
+                    <p><i>Disclaimer:</i> The artists featured here are purely for mock up purposes. These artists are not currently on the platform.</p>
                 </div>
             </div>
         </div>
-        <div className="casestudy-panel">
-            <div>
-                Ampled is a cooperative that is similar to Patreon but exclusively for muscians where the musicians are the owners. People go to the website to give monetary support to muscians and receive exclusive content.
+       <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding-sm">Why is this important?
             </div>
+            <div>
+                Ampled is a platform for fans to financially support musicians in exchange for exclusive content. This sounds like Patreon. But the difference is that it is a cooperative. Musicians get a seat at the decision making table and make money directly through community support.
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding-sm">Bringing user feedback to life
+            </div>
+            <div>
+                Listening to users should always be part of the design process but as a cooperative we take it a step further. Users help drive the product roadmap. Our journey of making a discovery page is a perfect example of that. 
+                <br /><br />
+            <img className="grid-image" style={{ maxWidth:833 }} src="/discovery-peeps.png"/>
+                As support tickets came in we noticed a theme among both artist-owners and new users. People were asking how they could find other artists on the platform. We did not have a browse page because the core way that artists get more supporters is by sending their page link out to their fans through social media.
+                <br /><br />
+                To better understand the importance of a discovery feature I made proto personas based on user feedback and gained insight through making an empathy map. 
+            </div>
+                <br /><br />
+            <img className="grid-image" style={{ maxWidth: 686 }} src="/discovery-empmap.png"/>
+                <br /><br />
+                The empathy map helped me see the problem and why people were asking for the discovery feature. The most significant insight was that people were evaluating the credability of the platform based on how many users it had. People were also frustrated because they expected to have a discovery experience like other social platforms. 
+                <br /><br />
+                A discovery page gives users more insight into how many people are using the platform and if the people using it are interesting or similar to them.
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Problem</div>
             <p>
-                A common ask from users was to make an artist browse/discovery feature. Both artists and new users wanted an easy way to see who else was on the platform.
+            How might we make gain user’s trust and help them find interesting artists?
+            < br/><br />
+            How might we make a feature lean enough to not distract from Ampled’s other priorities?
+            < br/><br />
+            How might we create a sense of ownership? <i>(This is a value to try to uphold as a cooperative with every design decision)</i>
             </p>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Why is this important?</div>
             <p>
-                Artist discovery is not a primary goal of the platform but as we continued to hear from users we learned that an artist browse page would aid in credibility (especially as we are a new platform asking for people to enter in their credit card information), a sense of community, and people learning more about the platform.
+                Artist discovery is not a primary goal of the platform but as we continued to get this feedback I realized that an artist browse page would aid in credibility (which is especially important because we are a new platform asking for people to enter in their credit card information), a sense of community, and people learning more about the platform.
             </p>
         </div>
         <div className="casestudy-panel">
@@ -64,7 +88,7 @@ const Discovery = () => (
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Credibility</div>
             <div>
-            The “featured” section is the default browse state. Featured artists are based on a combination of factors: a recently updated supporter page, number of supporters, and how long the artist has been on the platform. This combination allows for the featured artists to always be changing, be active/current artists, and artists who have established pages.
+            The “featured” section is the default browse state. Featured artists are based on a combination of factors: a recently updated supporter page, number of supporters, and how long the artist has been on the platform. This combination allows for the featured artists to always be changing, be active/current artists, and be artists who have built out pages.
             </div>
             <div className="grid full-width">
                 <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 686 }} src="/discovery-3.png" />
@@ -73,7 +97,7 @@ const Discovery = () => (
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Organization leads to understanding</div>
             <div>
-            Because this browse/discovery feature is not a prominent part of platform we did not need to create a robust filtering system. I kept the filter categories simple and slimmed down (i.e.: only included major cities instead of all cities). I thought of the filters mainly as a way to ground the users and tell them what they are looking at instead of an ambiguous/random assortment of musicians without context.
+            Because this browse/discovery feature is not a prominent part of platform we did not need to create a robust filtering system. I kept the filter categories simple and slimmed down (i.e.: only included major cities instead of all cities). I thought of the filters mainly as a way to ground the users so they know what they are looking at instead of it being an ambiguous/random assortment of musicians without context.
             </div>
             <div className="grid full-width">
                 <video controls

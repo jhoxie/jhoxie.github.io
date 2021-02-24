@@ -301,6 +301,12 @@ function MyApp({ Component, pageProps }) {
             .hidden-mobile {
                 display: inherit;
             }
+            ul.no-bottom-padding {
+                margin-bottom: 0;
+            }
+            ul.no-bottom-padding > li:last-child {
+                padding-bottom: 0;
+            }
             @media only screen and (min-width: 768px) {
                 .casestudy-header {
                     padding-top: 78px;

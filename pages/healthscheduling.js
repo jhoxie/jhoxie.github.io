@@ -32,7 +32,9 @@ const HealthScheduling = () => (
                 Problems
             </div>
             <div>
-                At an OBGYN clinic I worked at people had to either call our office or send a message to the provider through an online portal in order to schedule an appointment. This could only be done during office hours.
+                At an OBGYN clinic I worked at people had to either call the office or message the provider through an online portal to schedule an appointment. This could only be done during office hours.
+                < br /><br />
+                How might we make scheduling appointments more accessible and efficient for patients?
             </div>
         </div>
         <div className="casestudy-panel">
@@ -50,9 +52,10 @@ const HealthScheduling = () => (
                 Goals/Success Metric
             </div>
             <div style={{flex: '1 0 none'}}>
-            <ul style={{ marginBottom: 0 }}>
+            <ul className="no-bottom-padding">
                 <li>Positive patient feedback regarding clinic accessibility</li>
-                <li>More appointments scheduled</li>
+                <li>More appointments booked</li>
+                <li>Staff spends less time on scheduling</li>
             </ul>
             </div>
         </div>    
@@ -63,12 +66,31 @@ const HealthScheduling = () => (
             <div style={{flex: '1 0 none'}}>
                 At a speciality healthcare clinic there are a variety of appointments types that have different requirements such as providers, back office staffing, supplies, and time.
             </div>
+            </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                Proto-personas show the value of online scheduling
+            </div>
+            <div style={{flex: '1 0 none'}}>
+                I made proto-personas based on the patients that I worked with to synthesize the common difficulties with the current appointment booking system.
+            </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
-                Simplify the experience with progressive disclosure
+                Task flow with wireframes
             </div>
             <div>
+                The task flow ensures that the steps to make an appointment were easy to follow but still detailed enough to get all the correct information to limit scheduling mistakes. 
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader">
+                High fidelity mock up
+            </div>
+            <div>
+                <strong>Simplify the experience with progressive disclosure</strong>
+            </div>
+            <div className="extra-top-padding-sm">
                 In order to not overwhelm the user and to keep their expectations grounded they had to answer each question successively. 
                 <br /><br />
                 For example if a patient chose a provider first and it turned out that provider didn’t perform that procedure then they may be disappointed or frustrated to have to start the process over again.
@@ -89,7 +111,8 @@ const HealthScheduling = () => (
                     <img className="grid-image-scheduling" src="/healthsched-timeselected.png" />
                     <img className="grid-image-scheduling" src="/healthsched-confirm.png" />
                 </div>
-                <div className="grid full-width">
+            </div>
+            <div className="grid full-width">
                     <div className="section-subheader extra-top-padding">
                         Prototype
                     </div>
@@ -99,6 +122,17 @@ const HealthScheduling = () => (
                         className="grid-image extra-top-padding-sm"
                         style={{maxWidth: 686, width: '100%'}}
                         autoPlay loop muted playsInline />
+                </div>
+            <div className="grid full-width">
+                <div className="section-subheader extra-top-padding">
+                    Looking back
+                </div>
+                <div>
+                    This was a personal project based on an issue I saw at my job so I had a lot of insight into the issues. If this was a client project then I would have done more in depth interviews with both patients and staff to better understand the current scheduling process and conflicts. 
+                    <br /><br />
+                    It would be great to do more user testing to compare how often and what types of scheduling errors occur with online scheduling versus the current scheduling method.
+                    <br /><br />
+                    I also want to see how the proposed success metrics actually turn out with online scheduling implemented.  
                 </div>
             </div>
         </div>
