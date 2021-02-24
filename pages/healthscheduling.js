@@ -74,6 +74,19 @@ const HealthScheduling = () => (
             <div style={{flex: '1 0 none'}}>
                 I made proto-personas based on the patients that I worked with to synthesize the common difficulties with the current appointment booking system.
             </div>
+            <div className="character-quote">
+                <img className="mina" src="/mina.png" />
+                <div className="character-text">
+                    Mina is a busy night shift nurse who needs to book appointments on the go and afterhours so that she can sleep and run other errands during the day.
+                </div>
+            </div>
+            <div className="character-quote last">
+                <img className="alex hidden-gt-mobile" src="/alex.png" />
+                <div className="character-text">
+                    Alex commutes a long distance to make their appointments and needs to explore several options to determine what day/time will have the least traffic.
+                </div>
+                <img className="alex hidden-mobile" src="/alex.png" />
+            </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
@@ -81,6 +94,11 @@ const HealthScheduling = () => (
             </div>
             <div>
                 The task flow ensures that the steps to make an appointment were easy to follow but still detailed enough to get all the correct information to limit scheduling mistakes. 
+            </div>
+            <div className="extra-top-padding">
+                <div className="schedule-flow-container gray">
+                    <img src="/schedule-flow.png" className="schedule-flow"/>
+                </div>
             </div>
         </div>
         <div className="casestudy-panel">
@@ -161,6 +179,36 @@ const HealthScheduling = () => (
                 flex: 0 0 none;
                 padding-right: 40px;
             }
+            .character-quote {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 28px;
+            }
+            .character-text {
+                border: 4px #3E22ED solid;
+                width: 334px;
+                padding: 27px;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+            .mina {
+                width: 206px;
+                margin-right: 103px;
+            }
+            .alex {
+                width: 333px;
+                margin-left: 23px;
+            }
+            .schedule-flow-container {
+                padding: 24px;
+                border-radius: 6px;
+            }
+            .schedule-flow {
+                width: 100%;
+            }
             @media only screen and (max-width: 767px) {
                 .portfolio-piece-img {
                     margin-top: 18px;
@@ -184,13 +232,33 @@ const HealthScheduling = () => (
                 }
                 .grid-image-scheduling {
                     margin-top: 30px;
-                 }
+                }
                 .grid-image-scheduling:first-of-type {
                     margin-top: 0px;
-                 }
-                 .sub-panel:first-of-type {
+                }
+                .sub-panel:first-of-type {
                      margin-bottom: 18px;
-                 }
+                }
+                .character-quote {
+                    flex-direction: column;    
+                }
+                .character-quote:last-child {
+                    margin-bottom: 30px;
+                }
+                .character-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .alex {
+                    width: calc(333px * .8);
+                    margin: 0;
+                    margin-bottom: -5px;
+                }
+                .mina {
+                    width: calc(206px * .8);
+                    margin: 0;
+                    margin-bottom: -7px;
+                }
             }
         `}</style>
     </div>

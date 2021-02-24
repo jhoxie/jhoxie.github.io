@@ -40,12 +40,12 @@ const Discovery = () => (
             <div>
                 Listening to users should always be part of the design process but as a cooperative we take it a step further. Users help drive the product roadmap. Our journey of making a discovery page is a perfect example of that. 
                 <br /><br />
-            <img className="grid-image" style={{ maxWidth:833 }} src="/discovery-peeps.png"/>
+                <img className="grid-image" style={{ maxWidth:833, marginBottom: 30 }} src="/discovery-peeps.png"/>
                 As support tickets came in we noticed a theme among both artist-owners and new users. People were asking how they could find other artists on the platform. We did not have a browse page because the core way that artists get more supporters is by sending their page link out to their fans through social media.
                 <br /><br />
                 To better understand the importance of a discovery feature I made proto personas based on user feedback and gained insight through making an empathy map. 
             </div>
-                <br /><br />
+            <br /><br />
             <img className="grid-image" style={{ maxWidth: 686 }} src="/discovery-empmap.png"/>
                 <br /><br />
                 The empathy map helped me see the problem and why people were asking for the discovery feature. The most significant insight was that people were evaluating the credability of the platform based on how many users it had. People were also frustrated because they expected to have a discovery experience like other social platforms. 
