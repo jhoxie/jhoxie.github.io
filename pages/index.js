@@ -3,8 +3,8 @@ import Link from 'next/link'
 const caseStudies = [
   {
     studyHref: '/discovery',
-    title: 'Discovery experience for a Patreon-like platform',
-    subtitle: 'Creating credibility and community through browsing',
+    title: 'Discovery experience for an artist cooperative',
+    subtitle: 'Creating credibility and community through discovery',
     image: (<>
       <img className="portfolio-piece-img discovery-img" src="/discovery-1.png"/>
         <style jsx>{`
@@ -27,7 +27,7 @@ const caseStudies = [
   },
   {
     studyHref: '/goodreads',
-    title: 'Case Study: Goodreads Redesign',
+    title: 'Goodreads Redesign',
     subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>

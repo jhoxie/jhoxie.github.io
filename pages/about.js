@@ -10,7 +10,9 @@ const About = () => (
         As a designer I’m motivated to make easy and efficient experiences to prevent stress and conflict in humans by creating harmony between people and products. 
         </p>
         <p className="content">
-        In my free time I like to slowly make coffee, paint abstractions, and terraform my Animal Crossing island.
+        In my free time I like to 
+        <img src ="/about-coffee.png"/>slowly make coffee 
+        paint abstractions, and terraform my Animal Crossing island.
         </p>
         <p className="content">
             Let’s work together!

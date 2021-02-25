@@ -32,7 +32,7 @@ const HealthScheduling = () => (
                 Problems
             </div>
             <div>
-                At an OBGYN clinic I worked at people had to either call the office or message the provider through an online portal to schedule an appointment. This could only be done during office hours.
+                At an OBGYN clinic I worked at, to schedule an appointment people had to either call the office or message the provider through an online portal. This could only be done during office hours.
                 < br /><br />
                 How might we make scheduling appointments more accessible and efficient for patients?
             </div>
@@ -42,9 +42,7 @@ const HealthScheduling = () => (
                 Why is this important?
             </div>
             <div style={{flex: '1 0 none'}}>
-                Scheduling appointments is time consuming for both patients and staff. 
-                <br /><br />
-                Flexible online scheduling means <strong>less time taken from staff</strong> and <strong>increase in growth</strong>/more appointments scheduled.
+                Scheduling appointments is time-consuming for both patients and staff.    
             </div>
         </div>
         <div className="casestudy-panel">
@@ -64,7 +62,7 @@ const HealthScheduling = () => (
                 Constraints
             </div>
             <div style={{flex: '1 0 none'}}>
-                At a speciality healthcare clinic there are a variety of appointments types that have different requirements such as providers, back office staffing, supplies, and time.
+                At a specialty healthcare clinic, there are a variety of appointment types that have different requirements such as providers, back-office staffing, supplies, and time allocation.
             </div>
             </div>
         <div className="casestudy-panel">
@@ -73,11 +71,13 @@ const HealthScheduling = () => (
             </div>
             <div style={{flex: '1 0 none'}}>
                 I made proto-personas based on the patients that I worked with to synthesize the common difficulties with the current appointment booking system.
+                <br />< br/> 
+                Flexible online scheduling means <strong>less time taken from staff</strong> and <strong>increases in growth</strong> and more appointments scheduled.
             </div>
             <div className="character-quote">
                 <img className="mina" src="/mina.png" />
                 <div className="character-text">
-                    Mina is a busy night shift nurse who needs to book appointments on the go and afterhours so that she can sleep and run other errands during the day.
+                    Mina is a busy night shift nurse who needs to book appointments on the go and after-hours so she can sleep and run other errands during the day.
                 </div>
             </div>
             <div className="character-quote last">
@@ -103,15 +103,15 @@ const HealthScheduling = () => (
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">
-                High fidelity mock up
+                High fidelity mockup
             </div>
             <div>
                 <strong>Simplify the experience with progressive disclosure</strong>
             </div>
             <div className="extra-top-padding-sm">
-                In order to not overwhelm the user and to keep their expectations grounded they had to answer each question successively. 
+                In order to not overwhelm the user and to keep their expectations at bay, they had to answer each question successively. 
                 <br /><br />
-                For example if a patient chose a provider first and it turned out that provider didn’t perform that procedure then they may be disappointed or frustrated to have to start the process over again.
+                For example, if a patient chose a provider first and it turned out that particular provider didn’t perform that procedure then they may be disappointed or frustrated to have to start the process over again.
             </div>
             <div className="sides-80">
                 <div className="grid thirds full-width-mobile extra-top-padding">
@@ -121,7 +121,7 @@ const HealthScheduling = () => (
                 </div>
             </div>
             <div className="extra-top-padding">
-                When choosing the date, time, and provider I kept it all on the same screen so that the user could easily toggle between different providers or different days to find a time that would work best for them.
+                When choosing the date, time, and provider I kept it all on the same screen so that the user could easily toggle between different providers or different days to find a time that would work best for them. This is a feature that the Alex persona would find helpful.
             </div>
             <div className="sides-80">
                 <div className="grid thirds full-width-mobile extra-top-padding">
@@ -146,7 +146,7 @@ const HealthScheduling = () => (
                     Looking back
                 </div>
                 <div>
-                    This was a personal project based on an issue I saw at my job so I had a lot of insight into the issues. If this was a client project then I would have done more in depth interviews with both patients and staff to better understand the current scheduling process and conflicts. 
+                    This was a personal project based on an issue I saw at my job so I had a lot of insight into the issues. If this was a client project then I would have done more in-depth interviews with both patients and staff to better understand the current scheduling process and conflicts. 
                     <br /><br />
                     It would be great to do more user testing to compare how often and what types of scheduling errors occur with online scheduling versus the current scheduling method.
                     <br /><br />

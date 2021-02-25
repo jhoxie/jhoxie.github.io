@@ -2,7 +2,7 @@ const GoodReads = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="section-header">Case Study: Goodreads Redesign</div>
+            <div className="section-header">Goodreads Redesign</div>
             <div>Optimizing user experience through an analysis of information architecture</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
@@ -25,19 +25,19 @@ const GoodReads = () => (
                     </div>
                 </div>
                 <div className="disclaimer">
-                    <p><i>Disclaimer:</i> I am not affliated with Goodreads. This is a fun side project where I use limited user research and make assumptions. I like my design but I’m not advocating this is how Goodreads SHOULD be.</p>
+                    <p><i>Disclaimer:</i> I am not affiliated with Goodreads. This is a fun side project where I use limited user research and make assumptions. I like my design but I’m NOT advocating this is how Goodreads SHOULD be.</p>
                 </div>
             </div>
         </div>
         <div className="casestudy-panel">
             <div>
-                People love talking about how Goodreads has bad design. At the time of starting this project Goodreads had 350,000 reviews and rated #9 in the "books" category in the app store. So despite its infamy, people definitely use Goodreads.
+                People love talking about how Goodreads has bad design. At the time of starting this project, Goodreads had 350,000 reviews and rated #9 in the "books" category in the app store. So despite its infamy, people definitely use and like Goodreads.
                 <br /><br />
-                I put my own opinions about Goodreads aside and investigated this dictomy further by reading app store reviews.
+                I put my own opinions about Goodreads aside and investigated this dichotomy further by reading app store reviews.
                 <br /><br />
                 I looked at the 4-5 star reviews to see why people continue using the app and then looked at the 1-2 star reviews to see what is stopping people from using the app successfully.
                 <br /><br />
-                I took a step back from all the nice-to-have comments like “why can’t I review with half stars” and looked at what were the bigger picture problems that dedicated users cared about.
+                I took a step back from all the nice-to-have comments like “why can’t I review with half stars” and tried to suss out what the bigger picture problems were that dedicated users cared about.
             </div>
         </div>
         <div className="casestudy-panel">
@@ -53,13 +53,13 @@ const GoodReads = () => (
             </ul>
             <div className="section-subheader extra-top-padding-sm">Why is this important?</div>
             <ul>
-                <li>Familiarity, consistency, and user engagment</li>
+                <li>Familiarity, consistency, and user engagement</li>
                 <li><a href="https://www.nngroup.com/articles/aesthetic-usability-effect" target="_blank">Aesthetic-Usability Effect</a></li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">Success Metrics</div>
             <ul>
-                <li>App downloads</li>
-                <li>App store reviews</li>
+                <li>Increased app downloads</li>
+                <li>More positive app store reviews/ratings</li>
                 <li>Increased engagement on the app</li>
             </ul>
             <div className="section-subheader extra-top-padding-sm">
@@ -125,7 +125,7 @@ const GoodReads = () => (
             <div className="section-subheader extra-top-padding-sm before">Before:</div>
             <img className="grid-image" style={{ maxWidth: 479 }} src="/goodreads-before-1.png" />
             <div className="extra-top-padding">
-                The search function is in a fixed search bar at the top of the app and also has its own tab in the menu. The fixed <b>Search</b> bar at top sometimes function as a general search of the entire app and sometimes is only a search within your shelves - which I found confusing.
+                The search function is in a fixed search bar at the top of the app and also has its own tab in the menu. The fixed <b>Search</b> bar at the top sometimes functions as a general search of the entire app and sometimes is only a search within your personal bookshelf - which I found confusing.
             </div>
             <img className="grid-image extra-top-padding" style={{ maxWidth: 760 }} src="/goodreads-before-2.png" />
             <div className="extra-top-padding">
@@ -136,7 +136,7 @@ const GoodReads = () => (
             <div className="section-subheader extra-top-padding-sm after">After:</div>
             <img className="grid-image" style={{ maxWidth: 780 }} src="/goodreads-after-dsktp-1.png" />
             <div className="extra-top-padding">
-                I replaced the <b>More</b> tab with <b>Me</b> because “more” is a vague descriptive. The <b>Me</b> tab now houses the same features in a more intuitive design. <b>Me</b> is layed out like the user’s profile and includes book shelves, challenge, and notes - which used to live in both <b>More</b> and <b>My Books</b>.
+                I replaced the <b>More</b> tab with <b>Me</b> because “more” is a vague description. The <b>Me</b> tab now houses the same features in a more intuitive design. <b>Me</b> is laid out like the user’s profile and includes bookshelves, challenges, and notes - which used to live in both <b>More</b> and <b>My Books</b>.
             </div>
             <img className="grid-image extra-top-padding" style={{ maxWidth: 775 }} src="/goodreads-after-dsktp-2.png" />
         </div>
@@ -144,18 +144,18 @@ const GoodReads = () => (
             <div className="section-subheader extra-top-padding-sm before">Before:</div>
             <img className="grid-image" style={{ maxWidth: 780 }} src="/goodreads-before-3.png" />
             <div className="extra-top-padding">
-                <b>Discover</b> is not as robust as it is on desktop and is not utlizing mobile space to its potential.
+                <b>Discover</b> is not as robust as it is on desktop and is not utilizing mobile space to its full potential.
             </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm after">After:</div>
             <img className="grid-image" style={{ maxWidth: 1039 }} src="/goodreads-after-dsktp-3.png" />
             <div className="extra-top-padding">
-                Many features on the mobile app are limited compared to it’s web equivalent. Changing the architecture of the app allowed for more space and intuitive access to more features.
+                Many features on the mobile app are limited compared to its web equivalent. Changing the architecture of the app allowed for more space and intuitive access to more features.
             </div>
             <img className="grid-image extra-top-padding" style={{ maxWidth: 860 }} src="/goodreads-after-dsktp-4.png" />
             <div className="extra-top-padding">
-                <b>Search</b> is consolidated to the menu. If I worked at Goodreads I would have more information about how often the search bar at the top of the app is used or how vital it is to users. For the purposes of my project I assumed that the top search bar is not used as often as it is in other apps where this is come feature, such as a shopping app. 
+                <b>Search</b> is consolidated to the menu. If I worked at Goodreads I would have more information about how often the search bar at the top of the app is used or how vital it is to users. For the purposes of my project, I assumed that the top search bar is not used as often as it is in other apps where this is a core feature like a shopping app. 
             </div>
         </div>
         <style jsx>{`
