@@ -37,7 +37,6 @@ const ArtistDashboard = () => (
               Relevant resources were spread throughout the platform or limited in scope and there was a lack of emphasis on important features. This created a barrier to artists connecting with supporters.
               <br /><br />
               <img className="grid-image" style={{ maxWidth: 686, marginBottom: 30 }} src="/artist-dashboard-before.png"/>
-              As support tickets came in I noticed a theme among both artist-owners and new users. They were asking how they could find other artists on the platform. There was not a browse page because artists gained supporters by linking their page to social media.
           </div>
       </div>
       <div className="casestudy-panel">
