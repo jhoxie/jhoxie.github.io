@@ -3,7 +3,7 @@ import Link from 'next/link'
 const caseStudies = [
   {
     studyHref: '/discovery',
-    title: 'Discovery experience for an artist cooperative',
+    title: 'Case Study: Artist Discovery Experience',
     subtitle: 'Creating credibility and community through discovery',
     image: (<>
       <img className="portfolio-piece-img discovery-img" src="/discovery-1.png"/>
@@ -12,22 +12,44 @@ const caseStudies = [
           width: 300px;
           height: 249.53px;
           margin-top: 8px;
-          margin-right: 80px;
+          margin-bottom: 32px;
         }
         @media only screen and (max-width: 767px) {
           .discovery-img {
             margin: 0;
             width: 232px;
             height: 172px;
-            margin-bottom: 32px;
           }
         }
       `}</style>
     </>),
   },
   {
+    studyHref: '/artist-dashboard',
+    title: (<span>Showcase: <br/>Artist Dashboard</span>),
+    subtitle: 'Showcase: Artist dashboard',
+    image: (<div className="portfolio-piece-img-container">
+       <img className="portfolio-piece-img ampled-people-img" src="/ampled-people.png" />
+          <style jsx>{`
+              .ampled-people-img {
+                width: 379px;
+                height: 241px;
+                margin-bottom: 16px;
+              }
+              @media only screen and (max-width: 767px) {
+                .ampled-people-img {
+                  margin: 0;
+                  width: 303px;
+                  height: 192px;
+                  margin-top: 12px;
+                }
+              }
+          `}</style>
+    </div>),
+  },
+  {
     studyHref: '/goodreads',
-    title: 'Goodreads Redesign',
+    title: (<span>Information Architecture <br/>Analysis of Goodreads</span>),
     subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>
@@ -38,8 +60,8 @@ const caseStudies = [
           </div>
           <style jsx>{`
             .portfolio-piece-img-container {
-              margin-top: 8px;
-              margin-right: 102px;
+              margin-right: 8px;
+              margin-bottom: 32px;
             }
             .portfolio-piece-img {
               width: 110px;
@@ -48,7 +70,6 @@ const caseStudies = [
             @media only screen and (max-width: 767px) {
               .portfolio-piece-img-container {
                 margin-right: 8px;
-                margin-bottom: 32px;
               }
             }
         `}</style>
@@ -57,7 +78,7 @@ const caseStudies = [
   },
   {
     studyHref: '/healthscheduling',
-    title: 'Healthcare scheduling app',
+    title: (<span>Case Study: Healthcare <br/>Appointment Scheduling</span>),
     subtitle: 'Improve appointment scheduling at a specialized health clinic',
     image: (
       <>
@@ -66,17 +87,16 @@ const caseStudies = [
               .apptapp-img {
                 width: 342px;
                 height: 226px;
-                margin-top: 46px;
+                margin-top: 32px;
                 margin-bottom: 46px;
-                margin-right: 80px;
               }
               @media only screen and (max-width: 767px) {
                 .apptapp-img {
                   margin: 0;
+                  margin-bottom: 16px;
                   width: 184px;
                   height: 121.59px;
                   margin-top: 12px;
-                  margin-bottom: 32px;
                 }
               }
           `}</style>
@@ -86,13 +106,19 @@ const caseStudies = [
 ];
 
 const Home = () => (
-  <div className="portfolio-pieces">
+  <div className="portfolio-pieces grid half-and-half full-width-mobile">
     {caseStudies.map(cs => <PortfolioPiece {...cs}/>)}
     <style jsx>{`
       .portfolio-pieces {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        justify-items: stretch;
+        grid-tmplate-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      @media only screen and (max-width: 767px) {
+        .portfolio-pieces {
+          grid-tmplate-columns: initial;
+          grid-template-rows: initial;
+        }
       }
     `}</style>
   </div>
@@ -100,10 +126,9 @@ const Home = () => (
 
 const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
   <Link href={studyHref}>
-    <div className="portfolio-piece">
+    <div className="portfolio-piece grid-item">
       <div className="info">
         <div className="section-header">{title}</div>
-        <div>{subtitle}</div>
       </div>
       {image}
       <style jsx>{`
@@ -111,18 +136,32 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         background-color: white;
         flex: 1;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        border-radius: 6px;
         margin: 15px 0;
+        margin-bottom: 40px;
+        margin-right: 10px;
         cursor: pointer;
+        box-shadow: #3E23EB 0 0 0 1px, #B4ABE8 10px 10px 0px;
+        transition: 0.3s ease;
       }
       .portfolio-piece:hover {
-        background-color: rgba(62, 34, 237, 0.3);
-        transition: background-color 0.3s ease;
+        box-shadow: #3E23EB 0 0 0 1px, #B4ABE8 0px 0px 0px;
+        transition: 0.3s ease;
+        margin-right: -5px;
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+      .portfolio-piece .section-header {
+        font-size: 34px;
       }
       .portfolio-piece .info {
-        padding: 80px;
+        margin: 32px 32px 0 32px;
         flex: 1 1 0;
+        text-align: center;
       }
       .health-screening-img {
         width: 335px;
@@ -131,15 +170,23 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         marginRight: 80px;
       }
       @media only screen and (max-width: 767px) {
-        .portfolio-piece {
-          flex-direction: column;
-        }
         .health-screening-img {
           marginTop: 0;
           marginRight: 0;
         }
         .portfolio-piece .info {
-          padding: 24px;
+          margin: 16px 16px 0 16px;
+        }
+        .portfolio-piece {
+          box-shadow: #3E23EB 0 0 0 1px;
+          margin: 8px;
+        }
+        .portfolio-piece:hover {
+          box-shadow: #3E23EB 0 0 0 1px;
+          margin: 8px;
+        }
+        .portfolio-piece .section-header {
+          font-size: 24px;
         }
       }
     `}</style>
