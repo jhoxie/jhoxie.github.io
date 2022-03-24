@@ -4,7 +4,7 @@ const EligibilityQuiz = () => (
         <div className="casestudy-header">
             <div className="section-header">Case Study: Tech Equity Eligibility Quiz</div>
             <div className="flex" style={{ marginTop: 60 }}>
-                <img className="portfolio-piece-img" src="/TEMOCK.png" />
+                <img className="portfolio-piece-img" src="/TEMock.png" />
             </div>
         </div>
         {/* Meta */}
