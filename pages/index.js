@@ -5,7 +5,7 @@ const caseStudies = [
     studyHref: '/eligibility-quiz',
     title: 'Case Study: Tech Equity Eligibility Quiz',
     image: (<>
-      <img className="portfolio-piece-img eligibility-img" src="/TEMOCK.png"/>
+      <img className="portfolio-piece-img eligibility-img" src="/TEMock.png"/>
         <style jsx>{`
         .eligibility-img {
           width: 379px;
