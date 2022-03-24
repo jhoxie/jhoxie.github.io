@@ -1,18 +1,30 @@
 const About = () => (
     <div className="about">
         <div className="heading main">
-            My name is Julie Hoxie and I’m a product designer living in San Francisco.
-        </div>
+            Hi, I’m Julie Hoxie - a product designer living in Oakland, CA.  </div>        
+            <img className="grid-image float-left-desktop hidden-mobile" style={{ maxWidth: 467, marginBottom: 30 }} src="/about-vdpdrn.png"/>
+            <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/about-vdpdrn.png"/>
         <p className="content">
-            I have a B.A. in Psychology and a B.S. in Nursing. I strongly believe in listening, understanding, and advocating for people.
+            Before getting into product design, I worked in healthcare as a registered nurse. I observed the vital impact design had on healthcare workers and patients. I was inspired and curious to learn the process of creating positive user experiences. 
+        </p>
+    
+        <p className="content">
+            Through self study, <a href="https://designlab.com/" target="_blank">designlab</a>, and daily practice I became a product designer.         
         </p>
         <p className="content">
-        As a designer I’m motivated to make easy and efficient experiences to prevent stress and conflict in humans by creating harmony between people and products. 
+            I’m driven to create harmony between people and products by turning complex problems into intuitive experiences. I strongly believe in listening, understanding, and advocating for people throughout the design process. 
         </p>
         <p className="content">
-        In my free time I like to slowly make coffee, paint abstractions, and terraform my Animal Crossing island.
+            <br></br>
+            In my free time I like to:
+            <ul className="no-bullets">
+                <li><img className="like-icon" src="/about-coffee.png" width="36" height="25"/> slowly make coffee</li>
+                <li><img className="like-icon" src="/about-leaf-icon.png" width="36" height="36"/> be outside</li>
+                <li><img className="like-icon" src="/about-headphone-icon.png" width="36" height="36"/> assemble ambient beats</li>
+                <br></br>
+            </ul>
         </p>
-        <p className="content">
+        <p className="content logo">
             Let’s work together!
         </p>
         <p className="content" style={{textAlign: 'left'}}>
@@ -21,11 +33,13 @@ const About = () => (
         <div className="extra-top-padding">
             <div className="img-row">
             <div className="marvin-img">
-                    <img src="/marvin-2.png"/>
+                    <img className="hidden-mobile" height="525" width="582" src="/marvin-2.png"/>
+                    <img className="hidden-gt-mobile grid-image" height="288" width="319" src="/marvin-2.png"/>
                     <span className="caption">With Marvin, my rescue mutt pup.</span>
                 </div>
                 <div className="birding-img">
-                    <img src="/birding.png"/>
+                    <img className="hidden-mobile" height="525" width="396" src="/birding.png"/>
+                    <img className="hidden-gt-mobile grid-image" height="423" width="319" src="/birding.png"/>
                     <span className="caption">Birding in Golden Gate Park.</span>
                 </div>
             
@@ -35,6 +49,7 @@ const About = () => (
             .about {
                 padding-left: 200px;
                 padding-right: 200px;
+                line-height: 32px;
             }
             .img-row {
                 display: flex;
@@ -42,22 +57,45 @@ const About = () => (
                 align-items: flex-end;
             }
             .birding-img {
-                width: 43%;
                 margin-left: 30px;
             }
             .marvin-img {
-                width: 57%;
                 margin-right: 30px;
-            }
-            .img-row img {
-                width: 100%;
             }
             .caption {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
             }
+            .float-left-desktop {
+                float: left;
+                padding-right: 64px;
+                margin-top: 38px;
+            }
+            .no-bullets {
+                list-style: none;
+                padding-left: 0;
+                margin-top: 12px;
+            }
+            .no-bullets li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+            .like-icon {
+                margin-right: 20px;
+            }
+            .logo {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                color: #3E22ED;
+            }
             @media only screen and (max-width: 767px) {
+                .float-left-desktop {
+                    float: initial;
+                }
                 .about {
                     padding-left: 24px;
                     padding-right: 24px;

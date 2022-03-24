@@ -119,6 +119,9 @@ const Nav = ({ router }) => {
             .nav-section > div > a {
                 margin-left: 60px;
             }
+            .nav-section > div > a:hover {
+                text-decoration: none;
+            }
             .nav-section.menu > div > a {
                 margin-left: auto;
                 margin-top: 24px;
@@ -134,6 +137,9 @@ const Nav = ({ router }) => {
                 margin-top: 100px;
             }
             .nav-section > .selected > a {
+                border-bottom: 3px solid #3E22ED;
+            }
+            .nav-section > div > a:hover {
                 border-bottom: 3px solid #3E22ED;
             }
             .menu-expanded {

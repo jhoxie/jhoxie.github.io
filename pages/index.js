@@ -2,6 +2,28 @@ import Link from 'next/link'
 
 const caseStudies = [
   {
+    studyHref: '/eligibility-quiz',
+    title: 'Case Study: Tech Equity Eligibility Quiz',
+    image: (<>
+      <img className="portfolio-piece-img eligibility-img" src="/TEMOCK.png"/>
+        <style jsx>{`
+        .eligibility-img {
+          width: 379px;
+          height: 241px;
+          margin-bottom: 52px;
+        }
+        @media only screen and (max-width: 767px) {
+          .eligibility-img {
+            margin: 0;
+            width: 303px;
+            height: 192px;
+            margin-top: 12px;
+          }
+        }
+      `}</style>
+    </>),
+  },
+  {
     studyHref: '/discovery',
     title: 'Case Study: Artist Discovery Experience',
     subtitle: 'Creating credibility and community through discovery',
@@ -17,8 +39,8 @@ const caseStudies = [
         @media only screen and (max-width: 767px) {
           .discovery-img {
             margin: 0;
-            width: 232px;
-            height: 172px;
+            width: 286px;
+            height: 238px;
           }
         }
       `}</style>
@@ -49,7 +71,7 @@ const caseStudies = [
   },
   {
     studyHref: '/goodreads',
-    title: (<span>Information Architecture <br/>Analysis of Goodreads</span>),
+    title: (<span>Case Study: Goodreads <br/> Information Architecture Analysis</span>),
     subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>
@@ -94,8 +116,8 @@ const caseStudies = [
                 .apptapp-img {
                   margin: 0;
                   margin-bottom: 16px;
-                  width: 184px;
-                  height: 121.59px;
+                  width: 289px;
+                  height: 190px;
                   margin-top: 12px;
                 }
               }
@@ -112,7 +134,7 @@ const Home = () => (
       .portfolio-pieces {
         justify-items: stretch;
         grid-tmplate-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
       }
       @media only screen and (max-width: 767px) {
         .portfolio-pieces {

@@ -27,7 +27,7 @@ const ArtistDashboard = () => (
           <div className="section-subheader extra-top-padding-sm">Problem
           </div>
           <div>
-          Artists need to have easy access to account information and resources to improve their artist pages in order to gain more supporters
+          Artists need to have easy access to account information and resources to improve their artist pages in order to gain more supporters.
           </div>
       </div>
       <div className="casestudy-panel">
@@ -48,7 +48,7 @@ const ArtistDashboard = () => (
           </p>
       </div>
       <div className="casestudy-panel">
-        <div className="grid half-and-half" style={{ maxWidth: 729, margin: 'auto', textAlign: 'center' }}>
+        <div className="grid half-and-half" style={{ maxWidth: 1041, margin: 'auto', textAlign: 'center' }}>
           <div>
             <img className="grid-image" src="/dashboard-finished-1.png" />
             <p className="thin meta">Mobile Profile/Overview</p>
@@ -58,8 +58,8 @@ const ArtistDashboard = () => (
             <p className="thin meta">Fixed menu with scroll down</p>
           </div>
         </div>
-        <div className="extra-top-padding" style={{ maxWidth: 729, margin: 'auto', textAlign: 'center' }}>
-            <img className="grid-image" src="/dashboard-finished-3.png" />
+        <div className="extra-top-padding" style={{ maxWidth: 1041, margin: 'auto', textAlign: 'center' }}>
+            <img className="grid-image" src="/artist-dashboard-desktop.png" />
             <p className="thin meta">Desktop dashboard redesign hi-fi mock</p>
           </div>
       </div>

@@ -2,7 +2,7 @@ const HealthScheduling = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="section-header">Healthcare scheduling app</div>
+            <div className="section-header">Case Study: Healthcare Appointment Scheduling</div>
             <div>Improve appointment scheduling at a specialized health clinic</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/apptapp-header-2.png" />
@@ -70,7 +70,7 @@ const HealthScheduling = () => (
                 Proto-personas show the value of online scheduling
             </div>
             <div style={{flex: '1 0 none'}}>
-                I made proto-personas based on the patients that I worked with to synthesize the common difficulties with the current appointment booking system.
+                I made proto-personas based on the patients that I worked with to explore the common difficulties with the current appointment booking system. I used journey mapping from both the patient and staff perspective to zero in on their pain points and where the barriers are in a specific task to then find opportunities to optimize the experience. 
                 <br />< br/> 
                 Flexible online scheduling means <strong>less time taken from staff</strong> and <strong>increases in growth</strong> and more appointments scheduled.
             </div>
@@ -87,6 +87,7 @@ const HealthScheduling = () => (
                 </div>
                 <img className="alex hidden-mobile" src="/alex.png" />
             </div>
+
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader">

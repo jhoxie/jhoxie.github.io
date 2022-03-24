@@ -2,7 +2,7 @@ const Discovery = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="section-header">Discovery experience for an artist cooperative </div>
+            <div className="section-header">Case Study: Artist Discovery Experience</div>
             <div>Creating credibility and community through discovery</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/discovery-1.png" />
@@ -92,7 +92,7 @@ const Discovery = () => (
                 Becoming an owner is a milestone experience so I thought it would be nice to highlight new artist owners at the top.
             </div>
             <div className="grid full-width">
-                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 686 }} src="/discovery-2.png" />
+                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 1041 }} src="/discovery-2.png" />
             </div>
         </div>
         <div className="casestudy-panel">
@@ -103,7 +103,7 @@ const Discovery = () => (
                 The “featured” section is the default sort state. Featured artists are based on a combination of factors: a recently updated supporter page, number of supporters, and how long the artist has been on the platform. This combination allows for the featured artists to always be changing, be active/current artists, and be artists who have some amount of content to show.
             </div>
             <div className="grid full-width">
-                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 686 }} src="/discovery-3.png" />
+                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 1041 }} src="/discovery-3.png" />
             </div>
         </div>
         <div className="casestudy-panel">
@@ -121,14 +121,14 @@ const Discovery = () => (
                     src="discovery-prototype.mov"
                     poster="/ampled-cover.png"
                     className="grid-image extra-top-padding"
-                    style={{maxWidth: 686}}
+                    style={{maxWidth: 1041}}
                     autoPlay loop muted playsInline />
             </div>
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm">Mobile mockup</div>
             <div className="grid full-width">
-                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 686 }} src="/discovery-4.png" />
+                <img className="grid-image extra-top-padding-sm" style={{ maxWidth: 1041 }} src="/discovery-4.png" />
             </div>
         </div>
         <div className="casestudy-panel">

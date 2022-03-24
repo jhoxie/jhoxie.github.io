@@ -2,8 +2,7 @@ const GoodReads = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="section-header">Goodreads Redesign</div>
-            <div>Optimizing user experience through an analysis of information architecture</div>
+            <div className="section-header">Case Study: Information Architecture <br/> Analysis of Goodreads</div>
             <div className="flex" style={{ marginTop: 60 }}>
                 <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
                 <span style={{ width: 20, display: 'inline-block' }}/>
@@ -68,7 +67,7 @@ const GoodReads = () => (
             <div>
                 I conducted user research with <a href="https://www.optimalworkshop.com" target="_blank">Optimal Workshop’s</a> virtual card sorting in order to understand user’s mental models and expectations for wayfinding.
                 <br /><br />
-                <img className="grid-image" style={{ maxWidth: 685 }} src="/goodread-cardsort.png"/>
+                <img className="grid-image" style={{ maxWidth: 1041 }} src="/goodread-cardsort.png"/>
                 <br /><br />
                 I documented the current sitemap for both mobile and desktop versions of Goodreads using <a href="htts://octopus.do" target="_blank">Octopus.do</a>. 
             </div>
@@ -134,11 +133,11 @@ const GoodReads = () => (
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm after">After:</div>
-            <img className="grid-image" style={{ maxWidth: 780 }} src="/goodreads-after-dsktp-1.png" />
+            <img className="grid-image" style={{ maxWidth: 1041 }} src="/goodreads-after-dsktp-1.png" />
             <div className="extra-top-padding">
                 I replaced the <b>More</b> tab with <b>Me</b> because “more” is a vague description. The <b>Me</b> tab now houses the same features in a more intuitive design. <b>Me</b> is laid out like the user’s profile and includes bookshelves, challenges, and notes - which used to live in both <b>More</b> and <b>My Books</b>.
             </div>
-            <img className="grid-image extra-top-padding" style={{ maxWidth: 775 }} src="/goodreads-after-dsktp-2.png" />
+            <img className="grid-image extra-top-padding" style={{ maxWidth: 1041 }} src="/goodreads-after-dsktp-2.png" />
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm before">Before:</div>
@@ -149,16 +148,19 @@ const GoodReads = () => (
         </div>
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding-sm after">After:</div>
-            <img className="grid-image" style={{ maxWidth: 1039 }} src="/goodreads-after-dsktp-3.png" />
+            <img className="grid-image" style={{ maxWidth: 1041 }} src="/goodreads-after-dsktp-3.png" />
             <div className="extra-top-padding">
                 Many features on the mobile app are limited compared to its web equivalent. Changing the architecture of the app allowed for more space and intuitive access to more features.
             </div>
-            <img className="grid-image extra-top-padding" style={{ maxWidth: 860 }} src="/goodreads-after-dsktp-4.png" />
+            <img className="grid-image extra-top-padding" style={{ maxWidth: 1041 }} src="/goodreads-after-dsktp-4.png" />
             <div className="extra-top-padding">
                 <b>Search</b> is consolidated to the menu. If I worked at Goodreads I would have more information about how often the search bar at the top of the app is used or how vital it is to users. For the purposes of my project, I assumed that the top search bar is not used as often as it is in other apps where this is a core feature like a shopping app. 
             </div>
         </div>
         <style jsx>{`
+            .section-header {
+                line-height: 60px;
+            }
             a {
                 text-decoration: underline;
             }

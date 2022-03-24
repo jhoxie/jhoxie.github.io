@@ -48,6 +48,10 @@ function MyApp({ Component, pageProps }) {
                 text-decoration: none;
             }
 
+            a:hover {
+                text-decoration: underline;
+            }
+
             * {
                 box-sizing: border-box;
             }
@@ -87,7 +91,7 @@ function MyApp({ Component, pageProps }) {
             .content {
                 font-weight: normal;
                 font-style: normal;
-                font-size: 34px;
+                font-size: 24px;
             }
 
             .heading {
@@ -96,8 +100,8 @@ function MyApp({ Component, pageProps }) {
             }
 
             .heading.main {
-                font-size: 64px;
-                line-height: 100px;
+                font-size: 48px;
+                line-height: 77px;
                 font-family: 'Rubik', sans-serif;
                 color: #3E22ED;
                 font-weight: 500;
@@ -111,10 +115,10 @@ function MyApp({ Component, pageProps }) {
                 padding-bottom: 12px;
             }
 
-            .section-subheader {
-                font-size: 24px;
-                line-height: 36px;
-            }
+            // .section-subheader {
+            //     font-size: 24px;
+            //     line-height: 36px;
+            // }
 
             footer {
                 width: 100%;
@@ -241,7 +245,6 @@ function MyApp({ Component, pageProps }) {
             .casestudy-container li {
                 margin: 6px 0;
                 margin-left: -20px;
-                line-height: 24px;
             }
             .section-subheader {
                 font-size: 32px;
@@ -265,9 +268,7 @@ function MyApp({ Component, pageProps }) {
                 width: 100%;
                 max-width: 300px;
             }
-            .casestudy-container li {
-                padding-bottom: 24px;
-            }
+            
             .quote-blue {
                 padding: 16px 30px;
                 font-size: 24px;
