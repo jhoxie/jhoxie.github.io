@@ -5,9 +5,12 @@ const About = () => (
             <img className="grid-image float-left-desktop hidden-mobile" style={{ maxWidth: 467, marginBottom: 30 }} src="/about-vdpdrn.png"/>
             <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/about-vdpdrn.png"/>
         <p className="content">
-            Before getting into product design, I worked in healthcare as a registered nurse. I observed the vital impact design had on healthcare workers and patients. I was inspired and curious to learn the process of creating positive user experiences. 
+            Currently I'm working with <a href="https://techequitycollaborative.org/" target="_blank">Tech Equity</a> to help empower and bring equity to Bay Area communities. 
         </p>
-    
+        <p className="content">
+            Before getting into product design, I worked in healthcare as a registered nurse. I observed the impact digital design had on healthcare workers and patients. I was inspired and curious to learn the process of creating positive user experiences. 
+        </p>
+        
         <p className="content">
             Through self study, <a href="https://designlab.com/" target="_blank">designlab</a>, and daily practice I became a product designer.         
         </p>

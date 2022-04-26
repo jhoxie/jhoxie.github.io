@@ -1,5 +1,5 @@
-import Instagram from '../svgs/instagram.svg';
-import Behance from '../svgs/behance.svg';
+import Twitter from '../svgs/Twitter.svg';
+import Dribbble from '../svgs/Dribbble.svg';
 import Exit from '../svgs/exit.svg';
 import Menu from '../svgs/menu.svg';
 import { withRouter } from 'next/router'
@@ -43,9 +43,9 @@ const Nav = ({ router }) => {
                     <div className="thin-line" />
                     <div className="header-line hidden-gt-mobile">
                         <div className="outbound-links" style={{margin: 'auto'}}>
-                            <a href="https://www.behance.net/jhoxie" target="_blank"><Behance /></a>
+                            <a href="https://dribbble.com/julie_hoxie" target="_blank"><Dribbble /></a>
                             <span className="outbound-link-spacer" />
-                            <a href="https://www.instagram.com/reneehoxie/" target="_blank"><Instagram /></a>
+                            <a href="https://www.twitter.com/julie_hoxie" target="_blank"><Twitter /></a>
                         </div>
                     </div>
                 </>
@@ -55,12 +55,12 @@ const Nav = ({ router }) => {
                     <div className="nav-subsection">
                         <a href="mailto:hoxie.julie@gmail.com">hoxie.julie@gmail.com</a>
                         <div>product designer</div>
-                        <div>SF, CA</div>
+                        <div>oakland, CA</div>
                     </div>
                     <div className="outbound-links hidden-mobile">
-                        <a href="https://www.behance.net/jhoxie" target="_blank"><Behance /></a>
+                        <a href="https://dribbble.com/julie_hoxie" target="_blank"><Dribbble /></a>
                         <span className="outbound-link-spacer" />
-                        <a href="https://www.instagram.com/reneehoxie/" target="_blank"><Instagram /></a>
+                        <a href="https://www.twitter.com/julie_hoxie" target="_blank"><Twitter /></a>
                     </div>
                 </div>
             )}
@@ -95,9 +95,9 @@ const Nav = ({ router }) => {
                 line-height: 24px;
             }
             .outbound-link-spacer {
-                width: 16px;
+                width: 8px;
                 diplay: inline-block;
-                margin: 16px;
+                margin: 8px;
             }
             .thin-line {
                 border: 1px solid #3E22ED;
