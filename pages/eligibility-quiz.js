@@ -101,8 +101,11 @@ const EligibilityQuiz = () => (
         <div className="casestudy-panel">
             <div className="section-subheader extra-top-padding">Lofi explorations</div>
             <b>Eligibility Quiz</b>
-                <div className="extra-top-padding-sm"></div>
-                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQlofi1.png" />
+                <div className="extra-top-padding-sm"></div>            
+                <div className="grid half-and-half full-width-mobile">
+                    <img className="grid-image" src="/TE-EQlofi1A.png" />
+                    <img className="grid-image" src="/TE-EQlofi1B.png" />
+                </div>
             <b>Option 1.</b> The vertical progress bar shows the user how far along they are in the quiz. The numbers and check marks would be clickable so you can go back to change your answer.
             <br></br>                
             <div className="extra-top-padding-sm"></div>
