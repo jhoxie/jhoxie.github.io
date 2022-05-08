@@ -128,7 +128,7 @@ const Home = () => (
 
 const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
   <Link href={studyHref}>
-    <div className="portfolio-piece grid-item">
+    <div className="portfolio-piece grid-item" key="title">
       <div className="info">
         <div className="section-header">{title}</div>
       </div>
