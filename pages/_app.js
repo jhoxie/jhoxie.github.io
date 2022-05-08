@@ -63,6 +63,17 @@ function MyApp({ Component, pageProps }) {
                 justify-content: center;
                 align-items: stretch;
             }
+            .float-left-desktop {
+                float: left;
+                padding-right: 64px;
+                margin-top: 38px;
+            }
+            .float-right-desktop {
+                float: right;
+            }
+            span.clear {
+                clear: left;
+                display: block;}
 
             main {
                 font-family: roboto;
@@ -145,8 +156,11 @@ function MyApp({ Component, pageProps }) {
         `}</style>
         <style jsx global>{`
             video {
-            pointer-events: none;
-          }
+                pointer-events: none;
+            }
+            .intro {
+                min-height: 700px;
+            }
             .portfolio-pieces {
                 font-size: 24px;
                 line-height: 36px;
@@ -306,6 +320,15 @@ function MyApp({ Component, pageProps }) {
                 border-radius: 6px;
                 padding: 40px;
                 display: inline-block;
+            }
+            .about-cta a {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 160%;
+                text-decoration-line: underline;
+                color: #2A16A4;
             }
             .sides-80 {
                 margin-left: 56px;

@@ -70,11 +70,6 @@ const About = () => (
                 font-size: 16px;
                 line-height: 19px;
             }
-            .float-left-desktop {
-                float: left;
-                padding-right: 64px;
-                margin-top: 38px;
-            }
             .no-bullets {
                 list-style: none;
                 padding-left: 0;

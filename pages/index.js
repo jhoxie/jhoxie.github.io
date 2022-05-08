@@ -1,20 +1,21 @@
 import Link from 'next/link'
 
-const caseStudies = [
-  {
-    studyHref: '/eligibility-quiz',
-    title: 'Case Study: Tech Equity Eligibility Quiz',
-    image: (<>
-      <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
-        <style jsx>{`
-        .eligibility-img {
-          width: 100%;
-          height: 270px;
-          object-fit: cover;
-        }
-      `}</style>
-    </>),
-  },
+const favoriteCaseStudy = {
+  studyHref: '/eligibility-quiz',
+  title: 'Case Study: Tech Equity Eligibility Quiz',
+  image: (<>
+    <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
+      <style jsx>{`
+      .eligibility-img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+      }
+    `}</style>
+  </>),
+};
+
+const otherCaseStudies = [
   {
     studyHref: '/discovery',
     title: 'Case Study: Artist Discovery Experience',
@@ -37,29 +38,6 @@ const caseStudies = [
         }
       `}</style>
     </>),
-  },
-  {
-    studyHref: '/artist-dashboard',
-    title: (<span>Showcase: <br/>Artist Dashboard</span>),
-    subtitle: 'Showcase: Artist dashboard',
-    image: (<div className="portfolio-piece-img-container">
-       <img className="portfolio-piece-img ampled-people-img" src="/ampled-people.png" />
-          <style jsx>{`
-              .ampled-people-img {
-                width: 379px;
-                height: 241px;
-                margin-bottom: 16px;
-              }
-              @media only screen and (max-width: 767px) {
-                .ampled-people-img {
-                  margin: 0;
-                  width: 303px;
-                  height: 192px;
-                  margin-top: 12px;
-                }
-              }
-          `}</style>
-    </div>),
   },
   {
     studyHref: '/goodreads',
@@ -107,22 +85,79 @@ const caseStudies = [
   }
 ];
 
+
+const notFullCaseStudy = {
+    studyHref: '/artist-dashboard',
+    title: (<span>Showcase: <br/>Artist Dashboard</span>),
+    subtitle: 'Showcase: Artist dashboard',
+    image: (<div className="portfolio-piece-img-container">
+      <img className="portfolio-piece-img ampled-people-img" src="/ampled-people.png" />
+          <style jsx>{`
+              .ampled-people-img {
+                width: 379px;
+                height: 241px;
+                margin-bottom: 16px;
+              }
+              @media only screen and (max-width: 767px) {
+                .ampled-people-img {
+                  margin: 0;
+                  width: 303px;
+                  height: 192px;
+                  margin-top: 12px;
+                }
+              }
+          `}</style>
+    </div>),
+  };
+
 const Home = () => (
-  <div className="portfolio-pieces grid half-and-half full-width-mobile">
-    {caseStudies.map(cs => <PortfolioPiece {...cs}/>)}
-    <style jsx>{`
-      .portfolio-pieces {
-        justify-items: stretch;
-        grid-tmplate-columns: 50% 50%;
-        grid-template-rows: 33% 33% 33%;
-      }
-      @media only screen and (max-width: 767px) {
-        .portfolio-pieces {
-          grid-tmplate-columns: initial;
-          grid-template-rows: initial;
-        }
-      }
-    `}</style>
+  <div>
+    <div className="intro">
+        <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/Home-ProfilePic.png"/>
+        <img className="grid-image float-right-desktop hidden-mobile" width="580" style={{ marginTop: -40 }} src="/Home-ProfilePic.png"/>
+        <div className="heading main extra-top-padding">
+            Hi, I’m Julie - a product designer working at Tech Equity and living in Oakland, CA.
+        </div>
+        <div className="about-cta extra-top-padding">
+          <Link href="/about">
+            Read more about me.
+          </Link>
+        </div>
+        <span class="clear"></span>
+    </div>
+    <div>
+      <div className="heading main extra-top-padding center-text">
+        My favorite case study:
+      </div>
+      <div className="flex full-width-mobile favorite">
+        <PortfolioPiece {...favoriteCaseStudy}/>
+      </div>
+      <div className="heading main extra-top-padding center-text">
+        Other pretty great case studies:
+      </div>
+      <div className="portfolio-pieces grid half-and-half full-width-mobile">
+        {otherCaseStudies.map(cs => <PortfolioPiece {...cs}/>)}
+        <style jsx>{`
+          .portfolio-pieces {
+            justify-items: stretch;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50%;
+          }
+          @media only screen and (max-width: 767px) {
+            .portfolio-pieces {
+              grid-template-columns: initial;
+              grid-template-rows: initial;
+            }
+          }
+      `}</style>
+      </div>
+      <div className="heading main extra-top-padding center-text">
+        Just showing off - not full case studies:
+      </div>
+      <div className="flex full-width-mobile favorite">
+        <PortfolioPiece {...notFullCaseStudy}/>
+      </div>
+    </div>
   </div>
 );
 
@@ -133,7 +168,15 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         <div className="section-header">{title}</div>
       </div>
       {image}
-      <style jsx>{`
+      <style jsx global>{`
+      .favorite {
+        display: flex;
+        justify-content: center;
+      }
+      .favorite .portfolio-piece {
+        flex-basis: 50%;
+        flex-grow: 0;
+      }
       .portfolio-piece {
         background-color: #FAFAFA;
         flex: 1;
