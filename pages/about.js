@@ -1,7 +1,9 @@
 const About = () => (
     <div className="about">
         <div className="heading main">
-            Hi, I’m Julie Hoxie - a product designer living in Oakland, CA.  </div>        
+            Hi, I’m Julie Hoxie - a product designer living in Oakland, CA.  </div> 
+            <div className="extra-top-padding-sm"></div>
+    
             <img className="grid-image float-left-desktop hidden-mobile" style={{ maxWidth: 467, marginBottom: 30 }} src="/about-vdpdrn.png"/>
             <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/about-vdpdrn.png"/>
         <p className="content">
@@ -34,19 +36,7 @@ const About = () => (
             <a style={{ color: '#2A16A4', display: 'inline' }}>hoxie.julie@gmail.com</a>
         </p>
         <div className="extra-top-padding">
-            <div className="img-row">
-            <div className="marvin-img">
-                    <img className="hidden-mobile" height="525" width="582" src="/marvin-2.png"/>
-                    <img className="hidden-gt-mobile grid-image" height="288" width="319" src="/marvin-2.png"/>
-                    <span className="caption">With Marvin, my rescue mutt pup.</span>
-                </div>
-                <div className="birding-img">
-                    <img className="hidden-mobile" height="525" width="396" src="/birding.png"/>
-                    <img className="hidden-gt-mobile grid-image" height="423" width="319" src="/birding.png"/>
-                    <span className="caption">Birding in Golden Gate Park.</span>
-                </div>
-            
-            </div>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/About-Jtree.png" />
         </div>
         <style jsx>{`
             .about {
