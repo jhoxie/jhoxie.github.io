@@ -19,7 +19,7 @@ const EligibilityQuiz = () => (
         <div className="casestudy-panel">
             <div className="section-subheader">My Role</div>
             <div>
-            As the only designer on the team I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs.
+            As the only designer on the team, I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs.
             </div>
         </div>
         <div className="casestudy-panel">
@@ -38,7 +38,7 @@ const EligibilityQuiz = () => (
             <div className="section-subheader extra-top-padding">Problems</div>
             <div>
                 <ul className="no-bottom-padding">
-                    <li>User testing showed that people felt the quiz was too long and expressed frustration with not knowing how far along they were in the quiz. </li>
+                    <li>User testing showed the quiz felt too long and people expressed frustration with not knowing how close they were to completion. </li>
                     <li>People struggled to know the answers to some of the quiz questions.</li>
                     <li>The current flow did not include local laws that may impact eligibility.</li>
                     <li>Users wanted to check if multiple rent increases over time (past and present) were legal.</li>
@@ -92,8 +92,8 @@ const EligibilityQuiz = () => (
                 I synthesized the information from the spreadsheet to make an efficient user flow that includes both state and city eligibility. 
                 <br></br>
                 <div className="extra-top-padding-sm"></div>
-                The flow uses conditional logic to allow for efficiency and variable questions where the next question is based on what the previous question’s answer was. 
-                People are only asked questions relevant to that their experience. 
+                The flow uses conditional logic and variable questions where the next question is based on the previous question’s answer. 
+                This allows for efficiency and for people to only be asked questions relevant to that their experience.
                 <br></br>
                 <div className="extra-top-padding-sm"></div>
                 I determined the max workflow to figure out what design patterns and forms need to be designed. 
@@ -130,7 +130,7 @@ const EligibilityQuiz = () => (
         <div className="casestudy-panel alt-panel-bg extra-top-padding">
             <div className="section-subheader extra-top-padding">Team testing</div>
             <div>
-            I tested the two design options for the quiz with our cross functional team and we decided to proceed with the option 2. I polished up the design using the Tech Equity style guidelines with some minor changes for WCAG compliance. This design followed enough well known design patterns that I didn’t think it need as much testing compared to the calculator. As a team we designed to move forward with option 2 for the calculator. I polished up the design and decided to use the rest of my time to user test the calculator.
+            I tested the two design options for the quiz with our cross functional team and we decided to proceed with the option 2. I polished up the design using the Tech Equity style guidelines with some minor changes for WCAG compliance. This design followed enough well known design patterns that I didn’t think it need as much testing compared to the calculator. As a team we decided to move forward with option 2 for the calculator. I polished up the design and decided to use the rest of my time to user test the calculator.
             </div>
         </div>
         <div className="casestudy-panel alt-panel-bg">
@@ -147,7 +147,9 @@ const EligibilityQuiz = () => (
             Across the board users reacted negatively to the jump between these two screens:                
                 <div className="extra-top-padding-sm"/>
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-UTtransition.png" />
-                Due to the red color and caution symbol everyone initially thought that they made a mistake after entering their rent. I switch to a more neutral color and changed the symbol. I also changed the “add more dates” button to a design more consistent with how the rest of the questions were asked in order to better inform the user how to interact with that feature.
+                Due to the red color and caution symbol everyone initially thought that they made a mistake after entering their rent. 
+                <div className="extra-top-padding"></div>
+                I updated the result to a neutral color and switched out the caution sympbol. I changed the “add more dates” button to a design more consistent with how the rest of the questions were asked in order to better inform the user how to interact with that feature.
                 <div className="extra-top-padding-sm"/>
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-UTbaa.png" />
             </div>
