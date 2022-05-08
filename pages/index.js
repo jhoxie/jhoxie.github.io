@@ -5,20 +5,12 @@ const caseStudies = [
     studyHref: '/eligibility-quiz',
     title: 'Case Study: Tech Equity Eligibility Quiz',
     image: (<>
-      <img className="portfolio-piece-img eligibility-img" src="/TEMock.png"/>
+      <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
         <style jsx>{`
         .eligibility-img {
-          width: 379px;
-          height: 241px;
-          margin-bottom: 52px;
-        }
-        @media only screen and (max-width: 767px) {
-          .eligibility-img {
-            margin: 0;
-            width: 303px;
-            height: 192px;
-            margin-top: 12px;
-          }
+          width: 100%;
+          height: 270px;
+          object-fit: cover;
         }
       `}</style>
     </>),
@@ -75,24 +67,12 @@ const caseStudies = [
     subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>
-          <div className="portfolio-piece-img-container">
-              <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
-              <span style={{ width: 17, display: 'inline-block' }}/>
-              <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
-          </div>
+          <img className="portfolio-piece-img" src="/GR-buttonhero.png" />
           <style jsx>{`
-            .portfolio-piece-img-container {
-              margin-right: 8px;
-              margin-bottom: 32px;
-            }
             .portfolio-piece-img {
-              width: 110px;
-              height: 209.14px;
-            }
-            @media only screen and (max-width: 767px) {
-              .portfolio-piece-img-container {
-                margin-right: 8px;
-              }
+              width: 100%;
+              object-fit: cover;
+              // height: 209.14px;
             }
         `}</style>
       </>
@@ -155,7 +135,7 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
       {image}
       <style jsx>{`
       .portfolio-piece {
-        background-color: white;
+        background-color: #FAFAFA;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -168,6 +148,7 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         cursor: pointer;
         box-shadow: #3E23EB 0 0 0 1px, #B4ABE8 10px 10px 0px;
         transition: 0.3s ease;
+        overflow: hidden;
       }
       .portfolio-piece:hover {
         box-shadow: #3E23EB 0 0 0 1px, #B4ABE8 0px 0px 0px;

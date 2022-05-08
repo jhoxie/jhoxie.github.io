@@ -2,121 +2,179 @@ const EligibilityQuiz = () => (
     <div className="casestudy-container">
         {/* Hero */}
         <div className="casestudy-header">
-            <div className="section-header">Case Study: Tech Equity Eligibility Quiz</div>
-            <div className="flex" style={{ marginTop: 60 }}>
-                <img className="portfolio-piece-img" src="/TEMock.png" />
+            <div className="section-header">Tech Equity: Rent Control Quiz & Calculator</div>
+            <div className="flex" style={{ marginTop: 100 }}>
+                <img className="portfolio-piece-img" src="/TEEQHero.png" />
             </div>
         </div>
         {/* Meta */}
         <div className="casestudy-panel">
-            <div className="grid one-third-two-thirds problems full-width-mobile extra-top-padding no-top-padding-mobile">
-                <div className="gray sub-panel meta no-wrap">
-                    <div>
-                        <span className="">Client:</span><span className="thin"> Tech Equity</span>
-                    </div>
-                    <div>
-                        <span className="">Date:</span><span className="thin"> December 2021</span>
-                    </div>
-                    <div>
-                        <span className="">Tools:</span><span className="thin"> Figma, Google docs</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Project Overview</div>
+            <div className="section-subheader extra-top-padding">Project Overview</div>
             <div>
-                Tech Equity has a suite of products including a quiz that renters in California can fill out to verify their eligibility for rent control under state law. This quiz is particularly useful for people who’ve recently had a rent increase that they think may be illegal. My main task was to redesign the quiz to scale for local city laws and decrease quiz abandonment.
+            Renters in California can verify their eligibility for rent control and a calculate whether or not their rent increases are legal using Tech Equity’s quiz and calculator.            
+            <br></br><div className="extra-top-padding-sm"></div>
+            The quiz needed to be redesigned to <b>scale for state and local city laws</b> and to <b>decrease quiz abandonment</b>. The calculator needed to <b>allow for multiple rent increases over time</b>.
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Problem</div>
+            <div className="section-subheader extra-top-padding">My Role</div>
+            <div>
+            As the only designer on the team I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs.
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Duration</div>
+            <div>
+            3 months (part time)           
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Tools</div>
+            <div>
+            Figma, Google Sheets         
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Problems</div>
             <div>
                 <ul className="no-bottom-padding">
-                    <li>User testing showed that people felt that the quiz was too long or expressed frustration with not knowing how far along they were in the quiz. </li>
-                    <li>People struggled to know the answers to some of the quiz questions. </li>
+                    <li>User testing showed that people felt the quiz was too long and expressed frustration with not knowing how far along they were in the quiz. </li>
+                    <li>People struggled to know the answers to some of the quiz questions.</li>
                     <li>The current flow did not include local laws that may impact eligibility.</li>
+                    <li>Users wanted to check if multiple rent increases over time (past and present) were legal.</li>
                 </ul>
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Solution</div>
+            <div className="section-subheader extra-top-padding">Solutions</div>
             <div>
                 <ul className="no-bottom-padding">
-                    <li>Rework the quiz flow using conditional logic for efficiency and variable questions. </li>
-                    <li>Visibily show users how long the quiz is and provide resources to answer questions they may not know the answers to decrease frustration and increase quiz completion rates. </li>
+                    <li>Quiz flow uses conditional logic to allow for efficiency and variable questions. </li>
+                    <li>Visually indicate how far along people are in the quiz and provide resources to answer questions to decrease abandonment. </li>
                     <li>Expand quiz to include complex local laws while maintaining visual simplicity.</li>
+                    <li>Include multiple rent increase inputs.</li>
                 </ul>
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Before</div>
+            <div className="section-subheader extra-top-padding">Sneak peek of the before & after</div>
             <div>
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-BeforeQ.png" />
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-SneakBAA.png" />
             </div>
             <div>
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Research
+            <div className="section-subheader extra-top-padding">Before</div>
+            <div className="grid half-and-half full-width-mobile">
+                <img className="grid-image" src="/TE-BeforeQ.png" />
+                <img className="grid-image" src="/TE-BeforeRC.png" />
             </div>
             <div>
-                We had a research team compile a spreadsheet of everything that determines eligibility.
-                <br></br>
             </div>
-            <div className="extra-top-padding">
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Research
+            </div>
+            <div>
+            A research team compiled a spreadsheet of all the factors that determine rent control eligibility.                <br></br>
+            </div>
+            <div className="extra-top-padding-sm">
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TERS.png" />
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">User flow
-            </div>
-                I extrapolated the information from the spreadsheet to make a user flow that considers both state and city eligibility as the user moves through the quiz.
-            <div className="extra-top-padding">
+            <div className="section-subheader extra-top-padding-sm">Userflow</div>
+            <div>
+                I synthesized the information from the spreadsheet to make an efficient user flow that includes both state and city eligibility. 
+                <br></br>
+                <div className="extra-top-padding-sm"></div>
+                The flow uses conditional logic to allow for efficiency and variable questions where the next question is based on what the previous question’s answer was. 
+                People are only asked questions relevant to that their experience. 
+                <br></br>
+                <div className="extra-top-padding-sm"></div>
+                I determined the max workflow to figure out what design patterns and forms need to be designed. 
+                <div className="extra-top-padding-sm"></div>
                     <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 30 }} src="/TEUF.png" />
-                </div>
-                I reworked the quiz flow using conditional logic to allow for efficiency and variable questions where the subsequent question would be based on the previous answer. This solution means that people would only answer questions relevant to their situation. 
-                <br></br>
-                <br></br>
-                This process helped me think through the max workflow so I could determine which components needed to be designed.
-        </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Version 1</div>
-            <div>
-                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TEV1 (1).png" />
-                <br></br>
-                The vertical progress bar shows the user how far along they are in the quiz. The numbers and check marks are clickable so you can go back to change your answer.
-                < br /><br />
-                After answering each question the user will either move on to the next question or be directed to their result. For example, if they answer yes to the first question they would be directed to the ‘ineligible’ result without completing the rest of the steps. In a design critique we decided that the sudden jump in this context may be too abrupt and cause confusion.
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Version 2</div>
-            <div>
-                Alternatively, I designed an abstract horizontal progress bar showing how far the user has progressed but without concrete numbers. The abstract progress bar causes less confusion for someone who may jump to the results early on in the quiz compared to Version 1.
-                < br /><br />
-                Version 2 follows the Tech Equity style guidelines with some minor changes that I made in order to be <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG</a> compliant.
-                <br></br>
+            <div className="section-subheader extra-top-padding">Lofi explorations</div>
+            <b>Eligibility Quiz</b>
+                <div className="extra-top-padding-sm"></div>
+                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQlofi1.png" />
+            <b>Option 1.</b> The vertical progress bar shows the user how far along they are in the quiz. The numbers and check marks would be clickable so you can go back to change your answer.
+            <br></br>                
+            <div className="extra-top-padding-sm"></div>
+            After answering each question the user will either move on to the next question or be directed to their result. For example, if they answer yes to the first question they would be directed to the ‘ineligible’ result without completing the rest of the steps. The problem with this is that the sudden jump in this context may be too abrupt and cause confusion.
                 <div className="extra-top-padding"></div>
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TEWF (1).png" />
-            </div>
+                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQlofi2.png" />
+            <b>Option 2.</b> Alternatively, I designed an abstract horizontal progress bar showing how far the user has progressed but without concrete numbers. The abstract progress bar causes less confusion for someone who may jump to the results early on in the quiz compared to option 1. 
+            <br></br>
+            <div className="extra-top-padding"></div>
+            <b>Calculator</b>  
+                <div className="extra-top-padding-sm"></div>
+                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RClofi1.png" />
+            <b>Option 1.</b> This shows the calculator as a form input. After entering the rent increase and date, the two inputs are grouped together in a box that is editable. This gives the user feedback that they successfully completed the input and creates visual organization. However, I still felt this design was a bit overwhelming especially on the initial screen.
+                <div className="extra-top-padding"></div>
+                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RClofi2.png" />
+            <b>Option 2.</b> This design is simpler visually and more conversational where it asks one question at a time to guide the user through a flow. After each input is successfully completed it gets groups into an editable box that is placed on a timeline. This gives the user feedback of completion and organizes the elements chronologically.
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Team testing</div>
+            <div className="section-subheader extra-top-padding">Team testing</div>
             <div>
-                I tested the two design versions with our cross functional team. We decided that Version 2 was the winner. Version 2 followed well known design patterns so I didn’t think it need as much testing compared to another project our team was also working on at the time. I decided to use the rest of my time to test the more complex design project and keep this one leaner.
-                <br></br>
-                <div className="extra-top-padding"/>
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-MDMOCK.png" />
+            I tested the two design options for the quiz with our cross functional team and we decided to proceed with the option 2. I polished up the design using the Tech Equity style guidelines with some minor changes for WCAG compliance. This design followed enough well known design patterns that I didn’t think it need as much testing compared to the calculator. As a team we designed to move forward with option 2 for the calculator. I polished up the design and decided to use the rest of my time to user test the calculator.
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding-sm">Next Steps</div>
+            <div className="section-subheader extra-top-padding">User testing with hifi protype</div>
+            <div>
+            I tested the high fidelity clickable prototype with a group of California renters of various age groups to see if the workflow made sense. I compiled the feedback and created an action plan to make changes to the design based on the findings.                <br></br>
+                <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-usertestingnotion.png" />
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Major Finding</div>
+            <div>
+            Across the board users reacted negatively to the jump between these two screens:                
+                <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-UTtransition.png" />
+                Due to the red color and caution symbol everyone initially thought that they made a mistake after entering their rent. I switch to a more neutral color and changed the symbol. I also changed the “add more dates” button to a design more consistent with how the rest of the questions were asked in order to better inform the user how to interact with that feature.
+                <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-UTbaa.png" />
+            </div>
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Final Design: Eligibility Quiz</div>
+            <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQideationoverview.png" />
+            Final flow:
+            <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQfinalflowdesktop.png" />
+            Responsive design:
+            <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQresponsive.png" />
+        </div>   
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Final Design: Calculator</div>
+            <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-CalcIterations.png" />
+            Final mockups:
+            <div className="extra-top-padding-sm"/>
+                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RCfinal.png" />
+        </div>
+        <div className="casestudy-panel">
+            <div className="section-subheader extra-top-padding">Next Steps</div>
             <div>
                 Engineering is currently building the quiz. I will help with the QA process along with other team members to ensure the design is implemented accurately. Then the plan is to release the quiz locally to only the Bay Area so that we can work out any issues that may arise before releasing to all of California.
             </div>
         </div>
         <style jsx>{`
+            .casestudy-header {
+                padding-left: 0;
+                padding-right: 0;
+            }
             a {
                 text-decoration: underline;
             }
@@ -140,7 +198,7 @@ const EligibilityQuiz = () => (
                 width: 100%;
             }
             .portfolio-piece-img {
-                max-width: 721.67px;
+                max-width: 100%;
             }
             .problems {
                 // display: flex;
@@ -210,7 +268,7 @@ const EligibilityQuiz = () => (
                 }
                 .portfolio-piece-img {
                     margin-bottom: 50px;
-                    width: 300px;
+                    width: 1279px;
                 }
                 .problems {
                     flex-direction: column;

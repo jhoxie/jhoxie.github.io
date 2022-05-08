@@ -155,7 +155,7 @@ function MyApp({ Component, pageProps }) {
             .casestudy-container {
                 flex: 1;
                 display: flex;
-                background-color: white;
+                background-color: #FAFAFA;
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: stretch;

@@ -4,9 +4,7 @@ const GoodReads = () => (
         <div className="casestudy-header">
             <div className="section-header">Case Study: Information Architecture <br/> Analysis of Goodreads</div>
             <div className="flex" style={{ marginTop: 60 }}>
-                <img className="portfolio-piece-img" src="/goodreads-mock-community.png" />
-                <span style={{ width: 20, display: 'inline-block' }}/>
-                <img className="portfolio-piece-img" src="/goodreads-mock-profile.png" />
+                <img className="portfolio-piece-img" src="/GR-hero.png" />
             </div>
         </div>
          {/* Meta */}
@@ -184,7 +182,7 @@ const GoodReads = () => (
                 width: 100%;
             }
             .portfolio-piece-img {
-                max-width: 317px;
+                max-width: 100%;
             }
             .problems {
                 // display: flex;
@@ -252,7 +250,7 @@ const GoodReads = () => (
             @media only screen and (max-width: 767px) {
                 .portfolio-piece-img {
                     margin-bottom: 50px;
-                    width: 110px;
+                    width: 1279px;
                 }
                 .problems {
                     flex-direction: column;
