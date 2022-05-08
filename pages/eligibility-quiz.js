@@ -1,11 +1,11 @@
 const EligibilityQuiz = () => (
     <div className="casestudy-container">
         {/* Hero */}
-        <div className="casestudy-header">
-            <div className="section-header">Tech Equity: Rent Control Quiz & Calculator</div>
-            <div className="flex" style={{ marginTop: 100 }}>
+        <div className="casestudy-header-new">
+            <div className="flex">
                 <img className="portfolio-piece-img" src="/TEEQHero.png" />
             </div>
+            <div style={{ marginTop: 100 }}className="section-header">Rent Control Quiz &amp; Calculator</div>
         </div>
         {/* Meta */}
         <div className="casestudy-panel">
@@ -17,24 +17,24 @@ const EligibilityQuiz = () => (
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">My Role</div>
+            <div className="section-subheader">My Role</div>
             <div>
             As the only designer on the team I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs.
             </div>
         </div>
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Duration</div>
+            <div className="section-subheader">Duration</div>
             <div>
             3 months (part time)           
             </div>
         </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Tools</div>
+        <div className="casestudy-panel extra-extra-bottom-padding">
+            <div className="section-subheader">Tools</div>
             <div>
             Figma, Google Sheets         
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-top-padding">
             <div className="section-subheader extra-top-padding">Problems</div>
             <div>
                 <ul className="no-bottom-padding">
@@ -45,7 +45,7 @@ const EligibilityQuiz = () => (
                 </ul>
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-extra-bottom-padding">
             <div className="section-subheader extra-top-padding">Solutions</div>
             <div>
                 <ul className="no-bottom-padding">
@@ -56,24 +56,27 @@ const EligibilityQuiz = () => (
                 </ul>
             </div>
         </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Sneak peek of the before & after</div>
+        <div className="casestudy-panel extra-top-padding">
+            <div className="section-subheader extra-top-padding">Sneak peek of the before &amp; after</div>
             <div>
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-SneakBAA.png" />
             </div>
             <div>
             </div>
         </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Before</div>
-            <div className="grid half-and-half full-width-mobile">
+        <div className="casestudy-panel extra-extra-bottom-padding">
+            <div className="section-subheader extra-top-padding">Design audit</div>
+            <div className="">
+                I audited the current state of the product to find opportunities to optimize the design.
+            </div>
+            <div className="grid half-and-half full-width-mobile extra-top-padding-sm">
                 <img className="grid-image" src="/TE-BeforeQ.png" />
                 <img className="grid-image" src="/TE-BeforeRC.png" />
             </div>
             <div>
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-top-padding">
             <div className="section-subheader extra-top-padding">Research
             </div>
             <div>
@@ -83,7 +86,7 @@ const EligibilityQuiz = () => (
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TERS.png" />
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-extra-bottom-padding">
             <div className="section-subheader extra-top-padding-sm">Userflow</div>
             <div>
                 I synthesized the information from the spreadsheet to make an efficient user flow that includes both state and city eligibility. 
@@ -98,35 +101,39 @@ const EligibilityQuiz = () => (
                     <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 30 }} src="/TEUF.png" />
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel extra-top-padding extra-extra-bottom-padding">
             <div className="section-subheader extra-top-padding">Lofi explorations</div>
-            <b>Eligibility Quiz</b>
+            <div className="thin-border-indigo">
+                <b>Eligibility Quiz</b>
                 <div className="extra-top-padding-sm"></div>
                     <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQlofi1.png" />
-            <b>Option 1.</b> The vertical progress bar shows the user how far along they are in the quiz. The numbers and check marks would be clickable so you can go back to change your answer.
-            <br></br>                
-            <div className="extra-top-padding-sm"></div>
-            After answering each question the user will either move on to the next question or be directed to their result. For example, if they answer yes to the first question they would be directed to the ‘ineligible’ result without completing the rest of the steps. The problem with this is that the sudden jump in this context may be too abrupt and cause confusion.
+                    <b>Option 1.</b> The vertical progress bar shows the user how far along they are in the quiz. The numbers and check marks would be clickable so you can go back to change your answer.
+                <br></br>                
+                <div className="extra-top-padding-sm"></div>
+                After answering each question the user will either move on to the next question or be directed to their result. For example, if they answer yes to the first question they would be directed to the ‘ineligible’ result without completing the rest of the steps. The problem with this is that the sudden jump in this context may be too abrupt and cause confusion.
                 <div className="extra-top-padding"></div>
                     <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQlofi2.png" />
-            <b>Option 2.</b> Alternatively, I designed an abstract horizontal progress bar showing how far the user has progressed but without concrete numbers. The abstract progress bar causes less confusion for someone who may jump to the results early on in the quiz compared to option 1. 
+                    <b>Option 2.</b> Alternatively, I designed an abstract horizontal progress bar showing how far the user has progressed but without concrete numbers. The abstract progress bar causes less confusion for someone who may jump to the results early on in the quiz compared to option 1. 
+                </div>
             <br></br>
             <div className="extra-top-padding"></div>
-            <b>Calculator</b>  
+            <div className="thin-border-indigo">
+                <b>Calculator</b>  
                 <div className="extra-top-padding-sm"></div>
-                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RClofi1.png" />
-            <b>Option 1.</b> This shows the calculator as a form input. After entering the rent increase and date, the two inputs are grouped together in a box that is editable. This gives the user feedback that they successfully completed the input and creates visual organization. However, I still felt this design was a bit overwhelming especially on the initial screen.
+                <img className="grid-image" style={{ maxWidth: 1039, marginBottom: 16 }} src="/TE-RClofi1.png" />
+                <b>Option 1.</b> This shows the calculator as a form input. After entering the rent increase and date, the two inputs are grouped together in a box that is editable. This gives the user feedback that they successfully completed the input and creates visual organization. However, I still felt this design was a bit overwhelming especially on the initial screen.
                 <div className="extra-top-padding"></div>
-                    <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RClofi2.png" />
-            <b>Option 2.</b> This design is simpler visually and more conversational where it asks one question at a time to guide the user through a flow. After each input is successfully completed it gets groups into an editable box that is placed on a timeline. This gives the user feedback of completion and organizes the elements chronologically.
+                <img className="grid-image" style={{ maxWidth: 1039, marginBottom: 16 }} src="/TE-RClofi2.png" />
+                <b>Option 2.</b> This design is simpler visually and more conversational where it asks one question at a time to guide the user through a flow. After each input is successfully completed it gets groups into an editable box that is placed on a timeline. This gives the user feedback of completion and organizes the elements chronologically.
+            </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-top-padding">
             <div className="section-subheader extra-top-padding">Team testing</div>
             <div>
             I tested the two design options for the quiz with our cross functional team and we decided to proceed with the option 2. I polished up the design using the Tech Equity style guidelines with some minor changes for WCAG compliance. This design followed enough well known design patterns that I didn’t think it need as much testing compared to the calculator. As a team we designed to move forward with option 2 for the calculator. I polished up the design and decided to use the rest of my time to user test the calculator.
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg">
             <div className="section-subheader extra-top-padding">User testing with hifi protype</div>
             <div>
             I tested the high fidelity clickable prototype with a group of California renters of various age groups to see if the workflow made sense. I compiled the feedback and created an action plan to make changes to the design based on the findings.                <br></br>
@@ -134,7 +141,7 @@ const EligibilityQuiz = () => (
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-usertestingnotion.png" />
             </div>
         </div>
-        <div className="casestudy-panel">
+        <div className="casestudy-panel alt-panel-bg extra-extra-bottom-padding">
             <div className="section-subheader extra-top-padding">Major Finding</div>
             <div>
             Across the board users reacted negatively to the jump between these two screens:                
@@ -145,8 +152,8 @@ const EligibilityQuiz = () => (
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-UTbaa.png" />
             </div>
         </div>
-        <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Final Design: Eligibility Quiz</div>
+        <div className="casestudy-panel extra-top-padding">
+            <div className="section-subheader extra-top-padding center-text">Final Design: Eligibility Quiz</div>
             <div className="extra-top-padding-sm"/>
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQideationoverview.png" />
             Final flow:
@@ -157,24 +164,21 @@ const EligibilityQuiz = () => (
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQresponsive.png" />
         </div>   
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding">Final Design: Calculator</div>
+            <div className="section-subheader extra-top-padding center-text">Final Design: Calculator</div>
             <div className="extra-top-padding-sm"/>
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-CalcIterations.png" />
-            Final mockups:
-            <div className="extra-top-padding-sm"/>
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-RCfinal.png" />
+            <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-CalcIterations.png" />
         </div>
-        <div className="casestudy-panel">
+        <div style={{ marginLeft: 66 }}>
+            Final mockups:
+        </div>
+        <img className="grid-image" src="/TE-RCfinal.png" />
+        <div className="casestudy-panel final-design-panel-bg extra-extra-bottom-padding">
             <div className="section-subheader extra-top-padding">Next Steps</div>
             <div>
                 Engineering is currently building the quiz. I will help with the QA process along with other team members to ensure the design is implemented accurately. Then the plan is to release the quiz locally to only the Bay Area so that we can work out any issues that may arise before releasing to all of California.
             </div>
         </div>
         <style jsx>{`
-            .casestudy-header {
-                padding-left: 0;
-                padding-right: 0;
-            }
             a {
                 text-decoration: underline;
             }

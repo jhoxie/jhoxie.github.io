@@ -171,13 +171,15 @@ function MyApp({ Component, pageProps }) {
                 padding-bottom: 0;
                 text-align: center;
             }
+            .casestudy-header-new {
+                text-align: center;
+            }
             .casestudy-header .section-subheader {
                 color: #2A16A4;
             }
             .grid {
                 display: grid;
             }
-            
             .two-thirds-one-third {
                 grid-template-columns: 2fr 1fr;
             }
@@ -216,11 +218,29 @@ function MyApp({ Component, pageProps }) {
             .casestudy-panel {
                 padding: 0px 120px 60px 120px;
             }
+            .alt-panel-bg {
+                background-color: #E3EBFF;
+            }
+            .final-design-panel-bg {
+                background-color: #DFE3F0;
+            }
+            .thin-border-indigo {
+                border: 1px solid #3E22ED;
+                border-radius: 6px;
+                margin: -0 21px 0 -21px;
+                padding: 20px;
+            }
             .extra-top-padding {
                 padding-top: 60px;
             }
             .extra-top-padding-sm {
                 padding-top: 20px;
+            }
+            .extra-extra-top-padding {
+                padding-top: 120px;
+            }
+            .extra-extra-bottom-padding {
+                padding-bottom: 120px;
             }
             .sub-panel {
                 padding: 16px 30px;
@@ -253,6 +273,9 @@ function MyApp({ Component, pageProps }) {
                 color: #3E22ED;
                 font-weight: bold;
                 text-align: left;
+            }
+            .center-text {
+                text-align: center;
             }
             .caption {
                 padding-bottom: 16px;
