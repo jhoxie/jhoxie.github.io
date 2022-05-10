@@ -113,9 +113,8 @@ const notFullCaseStudy = {
 const Home = () => (
   <div>
     <div className="intro">
-        <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/Home-ProfilePic.png"/>
-        <img className="grid-image float-right-desktop hidden-mobile" width="580" style={{ marginTop: -40 }} src="/Home-ProfilePic.png"/>
-        <div className="heading main extra-top-padding">
+        <img className="grid-image float-right-desktop hidden-mobile" width="580" style={{ marginTop: -30 }} src="/Home-ProfilePic.png"/>
+        <div className="heading main extra-top-padding" style={{maxWidth: 620 }}>
             Hi, I’m Julie - a product designer working at Tech Equity and living in Oakland, CA.
         </div>
         <div className="about-cta extra-top-padding">
@@ -123,19 +122,19 @@ const Home = () => (
             Read more about me.
           </Link>
         </div>
-        <span class="clear"></span>
+        <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 96, marginTop: 48 }} src="/Home-ProfilePic.png"/>
     </div>
     <div>
-      <div className="heading main extra-top-padding center-text">
+      <div className="heading main extra-top-padding center-text-desktop">
         My favorite case study:
       </div>
-      <div className="flex full-width-mobile favorite">
+      <div className="flex full-width-mobile favorite extra-top-padding-sm extra-extra-bottom-padding">
         <PortfolioPiece {...favoriteCaseStudy}/>
       </div>
-      <div className="heading main extra-top-padding center-text">
+      <div className="heading main center-text-desktop">
         Other pretty great case studies:
       </div>
-      <div className="portfolio-pieces grid half-and-half full-width-mobile">
+      <div className="portfolio-pieces grid half-and-half full-width-mobile extra-top-padding-sm extra-extra-bottom-padding">
         {otherCaseStudies.map(cs => <PortfolioPiece {...cs}/>)}
         <style jsx>{`
           .portfolio-pieces {
@@ -151,10 +150,10 @@ const Home = () => (
           }
       `}</style>
       </div>
-      <div className="heading main extra-top-padding center-text">
+      <div className="heading main center-text-desktop">
         Just showing off - not full case studies:
       </div>
-      <div className="flex full-width-mobile favorite">
+      <div className="flex full-width-mobile  extra-top-padding-sm extra-extra-bottom-padding favorite">
         <PortfolioPiece {...notFullCaseStudy}/>
       </div>
     </div>
@@ -233,6 +232,9 @@ const PortfolioPiece = ({ studyHref, title, subtitle, image }) => (
         }
         .portfolio-piece .section-header {
           font-size: 24px;
+        }
+        .favorite .portfolio-piece {
+          flex-basis: 100%;
         }
       }
     `}</style>

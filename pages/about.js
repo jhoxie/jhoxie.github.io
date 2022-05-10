@@ -35,7 +35,7 @@ const About = () => (
             <a style={{ color: '#2A16A4', display: 'inline' }}>hoxie.julie@gmail.com</a>
         </p>
         <div className="extra-top-padding">
-                <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/About-Jtree.png" />
+                <img className="grid-image" style={{ marginBottom: 16 }} src="/About-Jtree.png" />
         </div>
         <style jsx>{`
             .about {
@@ -80,9 +80,6 @@ const About = () => (
                 color: #3E22ED;
             }
             @media only screen and (max-width: 767px) {
-                .float-left-desktop {
-                    float: initial;
-                }
                 .about {
                     padding-left: 24px;
                     padding-right: 24px;

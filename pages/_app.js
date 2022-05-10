@@ -63,14 +63,6 @@ function MyApp({ Component, pageProps }) {
                 justify-content: center;
                 align-items: stretch;
             }
-            .float-left-desktop {
-                float: left;
-                padding-right: 64px;
-                margin-top: 38px;
-            }
-            .float-right-desktop {
-                float: right;
-            }
             span.clear {
                 clear: left;
                 display: block;}
@@ -160,7 +152,10 @@ function MyApp({ Component, pageProps }) {
             }
             .intro {
                 min-height: 700px;
+                margin-left: 24px;
+                margin-right: 24px;
             }
+            .intro 
             .portfolio-pieces {
                 font-size: 24px;
                 line-height: 36px;
@@ -187,6 +182,9 @@ function MyApp({ Component, pageProps }) {
             }
             .casestudy-header-new {
                 text-align: center;
+            }
+            .casestudy-header-new .section-header {
+                margin: 24px;
             }
             .casestudy-header .section-subheader {
                 color: #2A16A4;
@@ -354,12 +352,29 @@ function MyApp({ Component, pageProps }) {
             ul.no-bottom-padding > li:last-child {
                 padding-bottom: 0;
             }
+            .float-left-desktop {
+                float: left;
+                padding-right: 64px;
+                margin-top: 38px;
+            }
+            .float-right-desktop {
+                float: right;
+            }
             @media only screen and (min-width: 768px) {
                 .casestudy-header {
                     padding-top: 78px;
                 }
+                .center-text-desktop {
+                    text-align: center;
+                }
+                .casestudy-header-new .section-header {
+                    margin-top: 100px;
+                }
             }
             @media only screen and (max-width: 767px) {
+                .intro {
+                    min-height: initial;
+                }
                 .casestudy-header {
                     padding: 0 24px 24px 24px;
                 }
@@ -409,10 +424,24 @@ function MyApp({ Component, pageProps }) {
                 .heading.main {
                     font-size: 32px;
                     line-height: 50px;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                }
+                .intro .heading.main {
+                    font-size: 32px;
+                    line-height: 50px;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
                 .content {
                     font-size: 24px;
                     line-height: 28px;
+                }
+                .float-left-desktop {
+                    float: initial;
+                }
+                .float-right-desktop {
+                    float: initial;
                 }
               }
             }

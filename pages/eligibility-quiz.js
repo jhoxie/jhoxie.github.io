@@ -5,7 +5,7 @@ const EligibilityQuiz = () => (
             <div className="flex">
                 <img className="portfolio-piece-img" src="/TEEQHero.png" />
             </div>
-            <div style={{ marginTop: 100 }}className="section-header">Rent Control Quiz &amp; Calculator</div>
+            <div className="section-header">Rent Control Quiz &amp; Calculator</div>
         </div>
         {/* Meta */}
         <div className="casestudy-panel">
