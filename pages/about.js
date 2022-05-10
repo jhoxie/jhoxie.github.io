@@ -2,8 +2,7 @@ const About = () => (
     <div className="about">
         <div className="heading main">
             Hi, I’m Julie Hoxie - a product designer living in Oakland, CA.  </div> 
-            <div className="extra-top-padding-sm"></div>
-    
+            <div className="extra-top-padding"></div>
             <img className="grid-image float-left-desktop hidden-mobile" style={{ maxWidth: 467, marginBottom: 30 }} src="/about-vdpdrn.png"/>
             <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/about-vdpdrn.png"/>
         <p className="content">
@@ -30,7 +29,7 @@ const About = () => (
             </ul>
         </p>
         <p className="content logo">
-            Let’s work together!
+            Let's work together!
         </p>
         <p className="content" style={{textAlign: 'left'}}>
             <a style={{ color: '#2A16A4', display: 'inline' }}>hoxie.julie@gmail.com</a>

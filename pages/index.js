@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const favoriteCaseStudy = {
   studyHref: '/eligibility-quiz',
-  title: 'Case Study: Tech Equity Eligibility Quiz',
+  title: <span>Tech Equity: Tenant <br/>Protections Suite</span>,
   image: (<>
     <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
       <style jsx>{`
@@ -18,7 +18,7 @@ const favoriteCaseStudy = {
 const otherCaseStudies = [
   {
     studyHref: '/discovery',
-    title: 'Case Study: Artist Discovery Experience',
+    title: <span> Ampled: Artist <br/> Discovery Experience</span>,
     subtitle: 'Creating credibility and community through discovery',
     image: (<>
       <img className="portfolio-piece-img discovery-img" src="/discovery-1.png"/>
@@ -41,7 +41,7 @@ const otherCaseStudies = [
   },
   {
     studyHref: '/goodreads',
-    title: (<span>Case Study: Goodreads <br/> Information Architecture Analysis</span>),
+    title: (<span>Goodreads: Information <br/> Architecture Analysis</span>),
     subtitle: 'Optimizing user experience through an analysis of information architecture',
     image: (
       <>
@@ -58,7 +58,7 @@ const otherCaseStudies = [
   },
   {
     studyHref: '/healthscheduling',
-    title: (<span>Case Study: Healthcare <br/>Appointment Scheduling</span>),
+    title: (<span>Personal Project: Healthcare <br/>Appointment Scheduling</span>),
     subtitle: 'Improve appointment scheduling at a specialized health clinic',
     image: (
       <>
@@ -88,7 +88,7 @@ const otherCaseStudies = [
 
 const notFullCaseStudy = {
     studyHref: '/artist-dashboard',
-    title: (<span>Showcase: <br/>Artist Dashboard</span>),
+    title: (<span>Ampled: <br/>Artist Dashboard</span>),
     subtitle: 'Showcase: Artist dashboard',
     image: (<div className="portfolio-piece-img-container">
       <img className="portfolio-piece-img ampled-people-img" src="/ampled-people.png" />
