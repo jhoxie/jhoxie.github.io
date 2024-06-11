@@ -19,7 +19,7 @@ const EligibilityQuiz = () => (
         <div className="casestudy-panel">
             <div className="section-subheader">My Role</div>
             <div>
-            As the only designer on the team, I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs.
+            As the only designer on the team, I was tasked to redesign the quiz and the calculator. I was responsible for creating the user flow, wireframing, prototyping,  user testing, synthesizing research, and iterating on final designs. I collaborated with product management, research, and engineering.
             </div>
         </div>
         <div className="casestudy-panel">
@@ -28,10 +28,16 @@ const EligibilityQuiz = () => (
             3 months (part time)           
             </div>
         </div>
-        <div className="casestudy-panel extra-extra-bottom-padding">
+        <div className="casestudy-panel">
             <div className="section-subheader">Tools</div>
             <div>
             Figma, Google Sheets         
+            </div>
+        </div>
+        <div className="casestudy-panel extra-extra-bottom-padding">
+            <div className="section-subheader">Prototype</div>
+            <div>
+            See the rent calculator prototype <a href=" https://www.figma.com/proto/KOvgS1u9iXXfYmN5u3wRj7/Tenant-Protections-2?page-id=642%3A1607&node-id=1162%3A3208&viewport=300%2C300%2C0.05&scaling=scale-down&starting-point-node-id=1162%3A3208" target="_blank">here</a> 
             </div>
         </div>
         <div className="casestudy-panel alt-panel-bg extra-top-padding">
@@ -155,7 +161,7 @@ const EligibilityQuiz = () => (
             </div>
         </div>
         <div className="casestudy-panel extra-top-padding">
-            <div className="section-subheader extra-top-padding center-text">Final Design: Eligibility Quiz</div>
+            <div className="section-subheader extra-top-padding">Final Design: Eligibility Quiz</div>
             <div className="extra-top-padding-sm"/>
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQideationoverview.png" />
             Final flow:
@@ -166,12 +172,14 @@ const EligibilityQuiz = () => (
                 <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-EQresponsive.png" />
         </div>   
         <div className="casestudy-panel">
-            <div className="section-subheader extra-top-padding center-text">Final Design: Calculator</div>
+            <div className="section-subheader extra-top-padding">Final Design: Calculator</div>
             <div className="extra-top-padding-sm"/>
             <img className="grid-image" style={{ maxWidth: 1041, marginBottom: 16 }} src="/TE-CalcIterations.png" />
         </div>
-        <div style={{ marginLeft: 66 }}>
-            Final mockups:
+        <div className="casestudy-panel">
+            <div className="section-subheader">Mobile Prototype</div>
+            <div>
+            See the rent calculator prototype <a href=" https://www.figma.com/proto/KOvgS1u9iXXfYmN5u3wRj7/Tenant-Protections-2?page-id=642%3A1607&node-id=1162%3A3208&viewport=300%2C300%2C0.05&scaling=scale-down&starting-point-node-id=1162%3A3208" target="_blank">here</a>             </div>
         </div>
         <img className="grid-image" src="/TE-RCfinal.png" />
         <div className="casestudy-panel final-design-panel-bg extra-extra-bottom-padding">

@@ -17,7 +17,7 @@ const Healthkeep = () => (
             <div className="grid half-and-half full-width-mobile">
                 <div className="gray sub-panel meta" style={{ alignSelf: 'start' }}>
                     <div>
-                        <span className="medium">Date:</span><span className="thin"> August 2019</span>
+                        <span className="medium">Date:</span><span className="thin"> 1 month</span>
                     </div>
                     <div>
                         <span className="medium">Client:</span><span className="thin"> Personal project</span>

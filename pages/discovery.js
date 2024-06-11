@@ -16,7 +16,7 @@ const Discovery = () => (
                         <span className="">Client:</span><span className="thin"> Ampled</span>
                     </div>
                     <div>
-                        <span className="">Date:</span><span className="thin"> December 2020</span>
+                        <span className="">Date:</span><span className="thin"> 2 months</span>
                     </div>
                     <div>
                         <span className="">Tools:</span><span className="thin"> Figma, Slack</span>

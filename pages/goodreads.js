@@ -15,7 +15,7 @@ const GoodReads = () => (
                         <span className="">Client:</span><span className="thin"> Personal project</span>
                     </div>
                     <div>
-                        <span className="">Date:</span><span className="thin"> September 2020</span>
+                        <span className="">Date:</span><span className="thin"> 1 month</span>
                     </div>
                     <div>
                         <span className="">Tools:</span><span className="thin"> Figma, Octopus.do, Optimal Workshop</span>

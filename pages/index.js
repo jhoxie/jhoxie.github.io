@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const favoriteCaseStudy = {
   studyHref: '/eligibility-quiz',
-  title: <span>Tech Equity: Tenant <br/>Protections Suite</span>,
+  title: <span>Tech Equity: Rent Control <br/> Quiz &amp; Calculator</span>,
   image: (<>
     <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
       <style jsx>{`
@@ -115,7 +115,7 @@ const Home = () => (
     <div className="intro">
         <img className="grid-image float-right-desktop hidden-mobile" width="580" style={{ marginTop: -30 }} src="/Home-ProfilePic.png"/>
         <div className="heading main extra-top-padding" style={{maxWidth: 620 }}>
-            Hi, I’m Julie - a product designer working at Tech Equity and living in Oakland, CA.
+            Hi, I’m Julie [she/her] - a product designer working at Tech Equity and living in Oakland, CA [open to relocation and/or remote work].
         </div>
         <div className="about-cta extra-top-padding">
           <Link href="/about">
