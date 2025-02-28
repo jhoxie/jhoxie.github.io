@@ -1,21 +1,42 @@
 import Link from 'next/link'
 
 const favoriteCaseStudy = {
-  studyHref: '/eligibility-quiz',
-  title: <span>Tech Equity: Rent Control <br/> Quiz &amp; Calculator</span>,
+  studyHref: '/AFC',
+  title: <span>BabyCenter: App-first content</span>,
   image: (<>
-    <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
+    <img className="portfolio-piece-img AFC-img" src="/hero.png"/>
       <style jsx>{`
-      .eligibility-img {
+      .AFC-img {
         width: 100%;
-        height: 270px;
-        object-fit: cover;
+        max-width: 800px;
+        height: auto;
+        object-fit: contain;
+        padding: 32px;
+      }
+      @media only screen and (max-width: 767px) {
+        .AFC-img {
+          padding: 16px;
+        }
       }
     `}</style>
   </>),
 };
 
 const otherCaseStudies = [
+  {
+    studyHref: '/eligibility-quiz',
+    title: <span>Tech Equity: Rent Control <br/> Quiz &amp; Calculator</span>,
+    image: (<>
+      <img className="portfolio-piece-img eligibility-img" src="/TEEQ-buttonhero.png"/>
+        <style jsx>{`
+        .eligibility-img {
+          width: 100%;
+          height: 270px;
+          object-fit: cover;
+        }
+      `}</style>
+    </>)
+  },
   {
     studyHref: '/discovery',
     title: <span> Ampled: Artist <br/> Discovery Experience</span>,
@@ -115,7 +136,7 @@ const Home = () => (
     <div className="intro">
         <img className="grid-image float-right-desktop hidden-mobile" width="580" style={{ marginTop: -30 }} src="/Home-ProfilePic.png"/>
         <div className="heading main extra-top-padding" style={{maxWidth: 620 }}>
-            Hi, I’m Julie [she/her] - a product designer working at Tech Equity and living in Oakland, CA [open to relocation and/or remote work].
+            Hi, I'm Julie [she/her] - a product designer working at Everyday Health Group living in Oakland, CA.
         </div>
         <div className="about-cta extra-top-padding">
           <Link href="/about">

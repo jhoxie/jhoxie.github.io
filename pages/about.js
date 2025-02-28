@@ -1,19 +1,15 @@
 const About = () => (
     <div className="about">
         <div className="heading main">
-            Hi, I’m Julie Hoxie [she/her] - a product designer living in Oakland, CA [open to relocation and/or remote work].  </div> 
-            <div className="extra-top-padding"></div>
-            <img className="grid-image float-left-desktop hidden-mobile" style={{ maxWidth: 467, marginBottom: 30 }} src="/about-vdpdrn.png"/>
-            <img className="grid-image hidden-gt-mobile" width="327" style={{ margin: 'auto', marginBottom: 48, marginTop: 48 }} src="/about-vdpdrn.png"/>
+            Hi, I’m Julie Hoxie </div>
         <p className="content">
-            I'm working at Everyday Health Group designing for <a href="https://babycenter.com/" target="_blank">BabyCenter</a> and <a href="https://whattoexpect.com/" target="_blank">What to Expect</a> to help parents throughout their pregnancy and parenting experiences. 
-        </p>
-        <p className="content">
-            I have a background in healthcare as a registered nurse where I observed the impact digital design had on healthcare workers and patients. I was inspired and curious to learn the process of creating positive user experiences. Through self study, <a href="https://designlab.com/" target="_blank">designlab</a>, and daily practice I became a product designer.
+            I'm a Product Designer at Everyday Health Group working on <a href="https://babycenter.com/" target="_blank">BabyCenter</a> and <a href="https://whattoexpect.com/" target="_blank">What to Expect</a> pregnancy & parenting brands. 
         </p>
 
         <p className="content">
-            I’m driven to create harmony between people and products by turning complex problems into intuitive experiences. I strongly believe in listening, understanding, and advocating for people throughout the design process. 
+            Before product design, I worked in healthcare as a registered nurse. My healthcare experience taught me to observe carefully, identify complex problems, and implement solutions that serve people's needs - skills that directly translate to my design process today.  
+            <div className="extra-top-padding-sm"></div>
+            I’m driven to create harmony between people and products by turning complex problems into intuitive experiences. I believe in listening, understanding, and advocating for people throughout the design process. 
         </p>
         <p className="content">
             <br></br>
@@ -21,15 +17,14 @@ const About = () => (
             <ul className="no-bullets">
                 <li><img className="like-icon" src="/about-coffee.png" width="36" height="25"/> slowly make coffee</li>
                 <li><img className="like-icon" src="/about-leaf-icon.png" width="36" height="36"/> be outside</li>
-                <li><img className="like-icon" src="/about-headphone-icon.png" width="36" height="36"/> assemble ambient beats</li>
+                <li><img className="like-icon" src="/substack_logo.png" width="29" height="36"/> <a href="https://substack.com/@lookingatbooks" target="_blank">write a Substack about book cover design</a> </li>
                 <br></br>
             </ul>
         </p>
         <p className="content logo">
-            Let's work together!
         </p>
         <p className="content" style={{textAlign: 'left'}}>
-            <a style={{ color: '#2A16A4', display: 'inline' }}>hoxie.julie@gmail.com</a>
+            <a style={{ color: '#2A16A4', display: 'inline' }}>hoxie.julie [at] gmail [dot] com</a>
         </p>
         <div className="extra-top-padding">
                 <img className="grid-image" style={{ marginBottom: 16 }} src="/About-Jtree.png" />

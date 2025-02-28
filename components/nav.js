@@ -1,5 +1,5 @@
-import Twitter from '../svgs/Twitter.svg';
-import Dribbble from '../svgs/Dribbble.svg';
+import Bluesky from '../svgs/blueskyoutlinelogoicon.svg';
+import Substack from '../svgs/substackoutlinelogoicon.svg';
 import Exit from '../svgs/exit.svg';
 import Menu from '../svgs/menu.svg';
 import { withRouter } from 'next/router'
@@ -18,10 +18,10 @@ const Nav = ({ router }) => {
                 </div>
                 <div className="nav-section hidden-mobile">
                     <div className={router.pathname === '/' && 'selected'}>
-                        <Link href="/">Work</Link>
+                        <Link href="/">work</Link>
                     </div>
                     <div className={router.pathname === '/about' && 'selected'}>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">about</Link>
                     </div>
                     {/* <a href="" className="nav-item">Resume</a> */}
                 </div>
@@ -33,19 +33,19 @@ const Nav = ({ router }) => {
                 <>
                     <div className="nav-section menu menu-expanded hidden-gt-mobile">
                         <div className={router.pathname === '/about' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <Link href="/about">About</Link>
+                            <Link href="/about">about</Link>
                         </div>
                         <div className={router.pathname === '/' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <Link href="/">Work</Link>
+                            <Link href="/">work</Link>
                         </div>
                         {/* <a href="" className="nav-item">Resume</a> */}
                     </div>
                     <div className="thin-line" />
                     <div className="header-line hidden-gt-mobile">
                         <div className="outbound-links" style={{margin: 'auto'}}>
-                            <a href="https://dribbble.com/julie_hoxie" target="_blank"><Dribbble /></a>
+                            <a href="https://lookingatbooks.substack.com/" target="_blank"><Substack/></a>
                             <span className="outbound-link-spacer" />
-                            <a href="https://www.twitter.com/julie_hoxie" target="_blank"><Twitter /></a>
+                            <a href="https://bsky.app/profile/jhox.bsky.social" target="_blank"><Bluesky/></a>
                         </div>
                     </div>
                 </>
@@ -58,9 +58,9 @@ const Nav = ({ router }) => {
                         <div>oakland, CA</div>
                     </div>
                     <div className="outbound-links hidden-mobile">
-                        <a href="https://dribbble.com/julie_hoxie" target="_blank"><Dribbble /></a>
+                        <a href="https://lookingatbooks.substack.com/" target="_blank"><Substack/></a>
                         <span className="outbound-link-spacer" />
-                        <a href="https://www.twitter.com/julie_hoxie" target="_blank"><Twitter /></a>
+                        <a href="https://bsky.app/profile/jhox.bsky.social" target="_blank"><Bluesky/></a>
                     </div>
                 </div>
             )}
