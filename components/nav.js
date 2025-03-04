@@ -1,5 +1,5 @@
-import Bluesky from '../svgs/blueskyoutlinelogoicon.svg';
-import Substack from '../svgs/substackoutlinelogoicon.svg';
+import Bluesky from '../svgs/blueskyoutlineicon.svg';
+import Substack from '../svgs/substackoutlineicon.svg';
 import Exit from '../svgs/exit.svg';
 import Menu from '../svgs/menu.svg';
 import { withRouter } from 'next/router'
@@ -13,15 +13,19 @@ const Nav = ({ router }) => {
             <div className="header-line">
                 <div className="nav-section" onClick={() => setMenuOpen(false)}>
                     <Link href="/">
-                        JH
+                        <a>JH</a>
                     </Link>
                 </div>
                 <div className="nav-section hidden-mobile">
                     <div className={router.pathname === '/' && 'selected'}>
-                        <Link href="/">work</Link>
+                        <Link href="/">
+                            <a>work</a>
+                        </Link>
                     </div>
                     <div className={router.pathname === '/about' && 'selected'}>
-                        <Link href="/about">about</Link>
+                        <Link href="/about">
+                            <a>about</a>
+                        </Link>
                     </div>
                     {/* <a href="" className="nav-item">Resume</a> */}
                 </div>
@@ -33,10 +37,14 @@ const Nav = ({ router }) => {
                 <>
                     <div className="nav-section menu menu-expanded hidden-gt-mobile">
                         <div className={router.pathname === '/about' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <Link href="/about">about</Link>
+                            <Link href="/about">
+                                <a>about</a>
+                            </Link>
                         </div>
                         <div className={router.pathname === '/' && 'selected'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <Link href="/">work</Link>
+                            <Link href="/">
+                                <a>work</a>
+                            </Link>
                         </div>
                         {/* <a href="" className="nav-item">Resume</a> */}
                     </div>
@@ -147,6 +155,11 @@ const Nav = ({ router }) => {
             }
             .hidden-gt-mobile .outbound-links * {
                 display: inline-block;
+            }
+            .outbound-links a:hover svg {
+                fill: #C0BAF3;
+                stroke: #C0BAF3;
+                transition: all 0.2s ease;
             }
         `}</style>
     </div>

@@ -136,7 +136,7 @@ const AFC = () => {
             <div className="casestudy-panel">
                 <div className="section-subheader">Brief</div>
                 <div>
-                    BabyCenter's pregnancy app provides digital resources to new and expecting parentings world wide, with weekly educational content serving as one of our core offeringst. User feedback consistently highlighted a strong desire for more daily pregnancy content. While this daily content already existed in our app, it was positioned below our weekly updates on the home feed, leading to an issue of content discovery where most users weren't scrolling past the weekly content to find it. I needed to rethink how we organize and surface content in the app in order to make it more accessible for users seeking more frequent touch points during their pregnancy.           
+                    BabyCenter's pregnancy app provides resources to new and expecting parents, with weekly educational content serving as one of our core offerings. User feedback consistently highlighted a strong desire for more daily pregnancy content. While we had daily content already, it was positioned below our weekly updates on the home feed, leading to an issue of content discovery where most users weren't scrolling past the weekly content to find it. I needed to rethink how we organize and surface content in the app in order to make it more accessible for users seeking more frequent touch points during their pregnancy.           
                 </div>
             </div>
             <div className="casestudy-panel">
@@ -146,7 +146,7 @@ const AFC = () => {
                     <ContentGrid items={challengeItems} />
                     <br/>
                     <div className="extra-top-padding-sm"></div>
-                    Most of the content was originally created for the BabyCenter website so this gave us an opportunity to rethink how the content could be presented in a way that felt engaging on a smaller screen and aligned with mobile user behaviors and expectations.
+                    Most of the content was originally created for the BabyCenter website so this gave me an opportunity to collaborate with edit and brand teams to rethink how the content could be presented in a way that felt engaging on a smaller screen and aligned with mobile user behaviors and expectations.
                     <br/>
                     <div className="extra-top-padding-sm"></div>
                     I also needed to balance revenue goals with user experience, ensuring ad placements weren't disrupted while still delivering quality content to users.  
@@ -182,7 +182,7 @@ const AFC = () => {
                 <div>
                     <strong>Immersive content view</strong>
                     <br/>
-                    When a user taps on a story thumbnail it opens up into a full screen view with black background to highlight the graphic assets that the brand and edit team worked on. Progress informs the user how many slides are in a story and at the bottom there is space for a share button and CTA to go deeper into the app and to eventually add the ability to bookmark content.                </div>
+                    When a user taps on a story thumbnail it opens up into a full screen view with black background to highlight the graphic assets that the brand and edit team worked on. A progress bar informs the user how many slides are in a story. At the bottom there is space for more actions like sharing, bookmarking, and a CTA to go deeper into the app.                </div>
                     <div className="extra-top-padding-sm"></div>
                 <div className="flex solution-image-container">
                     <img className="solution-img" src="/second_solution.png" alt="Daily updates solution"/>

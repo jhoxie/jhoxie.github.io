@@ -7,16 +7,12 @@ const favoriteCaseStudy = {
     <img className="portfolio-piece-img AFC-img" src="/hero.png"/>
       <style jsx>{`
       .AFC-img {
-        width: 100%;
+        width: 90%;
         max-width: 800px;
         height: auto;
         object-fit: contain;
         padding: 32px;
-      }
-      @media only screen and (max-width: 767px) {
-        .AFC-img {
-          padding: 16px;
-        }
+        margin: 0 auto;
       }
     `}</style>
   </>),

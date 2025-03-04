@@ -7,9 +7,7 @@ const About = () => (
         </p>
 
         <p className="content">
-            Before product design, I worked in healthcare as a registered nurse. My healthcare experience taught me to observe carefully, identify complex problems, and implement solutions that serve people's needs - skills that directly translate to my design process today.  
-            <div className="extra-top-padding-sm"></div>
-            I’m driven to create harmony between people and products by turning complex problems into intuitive experiences. I believe in listening, understanding, and advocating for people throughout the design process. 
+            Before product design, I worked in healthcare as a registered nurse. My healthcare experience taught me to observe carefully, identify complex problems, and implement solutions. I’m driven to create harmony between people and products by turning complex problems into intuitive experiences. I believe in listening, understanding, and advocating for people throughout the design process. 
         </p>
         <p className="content">
             <br></br>
